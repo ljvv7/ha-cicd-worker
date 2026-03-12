@@ -75,7 +75,6 @@
     "cdctask" : false,
     "createTime" : 1773248644383,
     "crontabExpressionFlag" : false,
-    "currentEventTimestamp" : 1773349657812,
     "dag" : {
       "edges" : [ {
         "disabled" : false,
@@ -523,7 +522,6 @@
     "dataSaving" : true,
     "deduceSchemaTask" : false,
     "deduplicWriteMode" : "intelligent",
-    "delayTime" : 454,
     "desc" : "",
     "doubleActive" : false,
     "dynamicAdjustMemoryUsage" : false,
@@ -544,8 +542,6 @@
     "isOpenAutoDDL" : false,
     "isSchedule" : false,
     "isStopOnError" : true,
-    "lastStartDate" : 1773349547361,
-    "last_updated" : 1773349547653,
     "name" : "任务 1",
     "normalTask" : true,
     "oldVersionTimezone" : false,
@@ -581,7 +577,6 @@
     } ],
     "syncStatus" : "",
     "syncType" : "migrate",
-    "taskRecordId" : "69b32aa865ad9e4637e331a3",
     "testTask" : false,
     "testTaskId" : "69a94fb25ea666daafbff2bb",
     "testUsingPreview" : false,
