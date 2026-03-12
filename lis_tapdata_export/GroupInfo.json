@@ -7,7 +7,7 @@
       "branch" : "main",
       "repoUrl" : "https://github.com/ljvv7/ha-cicd-worker.git"
     },
-    "id" : "69b328a165ad9e4637e33196",
+    "id" : "69b32b1e65ad9e4637e331e4",
     "last_updated" : 1773253122978,
     "name" : "lis",
     "resetTaskList" : [ ],

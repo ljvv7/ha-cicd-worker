@@ -208,7 +208,7 @@
     "loadCount" : 115,
     "loadFieldErrMsg" : "",
     "loadFieldsStatus" : "finished",
-    "loadSchemaField" : true,
+    "loadSchemaField" : false,
     "loadSchemaTime" : 1773338406183,
     "multiConnectionInstanceId" : "d77c397c03adbc6c19b9cdf580bcccec",
     "name" : "PGshare - Copy",
@@ -227,7 +227,7 @@
     "status" : "ready",
     "submit" : true,
     "tableCount" : 115,
-    "testTime" : 1773338400854,
+    "testTime" : 1773349558002,
     "transformed" : true
   }
 } ]
