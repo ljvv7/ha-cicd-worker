@@ -1,0 +1,897 @@
+[ {
+  "collectionName" : "Task",
+  "json" : {
+    "_deleted" : false,
+    "accessNodeProcessId" : "",
+    "accessNodeProcessIdList" : [ ],
+    "accessNodeType" : "AUTOMATIC_PLATFORM_ALLOCATION",
+    "alarmRules" : [ {
+      "equalsFlag" : 1,
+      "key" : "TASK_INCREMENT_DELAY",
+      "ms" : 60000,
+      "point" : 60,
+      "times" : 0
+    }, {
+      "equalsFlag" : 0,
+      "key" : "TASK_RETRY_WARN",
+      "ms" : 0,
+      "point" : 0,
+      "times" : 10
+    } ],
+    "alarmSettings" : [ {
+      "interval" : 300,
+      "key" : "TASK_STATUS_ERROR",
+      "notify" : [ "SYSTEM" ],
+      "open" : true,
+      "sort" : 1,
+      "type" : "TASK",
+      "unit" : "SECOND"
+    }, {
+      "interval" : 300,
+      "key" : "TASK_FULL_COMPLETE",
+      "notify" : [ "SYSTEM" ],
+      "open" : true,
+      "sort" : 3,
+      "type" : "TASK",
+      "unit" : "SECOND"
+    }, {
+      "interval" : 300,
+      "key" : "TASK_INCREMENT_START",
+      "notify" : [ "SYSTEM" ],
+      "open" : true,
+      "sort" : 4,
+      "type" : "TASK",
+      "unit" : "SECOND"
+    }, {
+      "interval" : 300,
+      "key" : "TASK_INCREMENT_DELAY",
+      "notify" : [ "SYSTEM" ],
+      "open" : true,
+      "sort" : 6,
+      "type" : "TASK",
+      "unit" : "SECOND"
+    }, {
+      "interval" : 300,
+      "key" : "TASK_INSPECT_DIFFERENCE",
+      "notify" : [ "SYSTEM" ],
+      "open" : true,
+      "sort" : 1,
+      "type" : "TASK",
+      "unit" : "SECOND"
+    }, {
+      "interval" : 300,
+      "key" : "TASK_RETRY_WARN",
+      "notify" : [ "SYSTEM" ],
+      "open" : true,
+      "sort" : 4,
+      "type" : "TASK",
+      "unit" : "SECOND"
+    } ],
+    "attrs" : { },
+    "autoIncrementalBatchSize" : true,
+    "autoInspect" : false,
+    "blankLog" : false,
+    "canOpenInspect" : false,
+    "cdctask" : false,
+    "createTime" : 1773248644561,
+    "crontabExpressionFlag" : false,
+    "currentEventTimestamp" : 1773248814317,
+    "dag" : {
+      "edges" : [ {
+        "disabled" : false,
+        "source" : "16608b68-8a92-4e48-a957-341ccbbd924c",
+        "target" : "92d2edf7-fd3c-40cf-8884-3a84b73cd08a"
+      } ],
+      "nodes" : [ {
+        "alarmRules" : [ {
+          "equalsFlag" : 1,
+          "key" : "DATANODE_AVERAGE_HANDLE_CONSUME",
+          "ms" : 5000,
+          "point" : 12,
+          "times" : 0
+        } ],
+        "alarmSettings" : [ {
+          "interval" : 300,
+          "key" : "DATANODE_AVERAGE_HANDLE_CONSUME",
+          "notify" : [ "SYSTEM", "EMAIL" ],
+          "open" : true,
+          "sort" : 4,
+          "type" : "DATANODE",
+          "unit" : "SECOND"
+        } ],
+        "applyCompareRule" : false,
+        "attrs" : {
+          "accessNodeProcessId" : "",
+          "accessNodeType" : "AUTOMATIC_PLATFORM_ALLOCATION",
+          "capabilities" : [ {
+            "id" : "count_raw_command_function",
+            "type" : 11
+          }, {
+            "id" : "run_raw_command_function",
+            "type" : 11
+          }, {
+            "id" : "execute_command_function",
+            "type" : 11
+          }, {
+            "id" : "release_external_function",
+            "type" : 11
+          }, {
+            "id" : "batch_read_function",
+            "type" : 11
+          }, {
+            "id" : "stream_read_function",
+            "type" : 11
+          }, {
+            "id" : "batch_count_function",
+            "type" : 11
+          }, {
+            "id" : "timestamp_to_stream_offset_function",
+            "type" : 11
+          }, {
+            "id" : "write_record_function",
+            "type" : 11
+          }, {
+            "id" : "after_initial_sync_function",
+            "type" : 11
+          }, {
+            "id" : "query_by_filter_function",
+            "type" : 11
+          }, {
+            "id" : "query_by_advance_filter_function",
+            "type" : 11
+          }, {
+            "id" : "create_table_v2_function",
+            "type" : 11
+          }, {
+            "id" : "clear_table_function",
+            "type" : 11
+          }, {
+            "id" : "drop_table_function",
+            "type" : 11
+          }, {
+            "id" : "create_index_function",
+            "type" : 11
+          }, {
+            "id" : "delete_index_function",
+            "type" : 11
+          }, {
+            "id" : "query_indexes_function",
+            "type" : 11
+          }, {
+            "id" : "query_constraints_function",
+            "type" : 11
+          }, {
+            "id" : "create_constraint_function",
+            "type" : 11
+          }, {
+            "id" : "drop_constraint_function",
+            "type" : 11
+          }, {
+            "id" : "alter_field_attributes_function",
+            "type" : 11
+          }, {
+            "id" : "alter_field_name_function",
+            "type" : 11
+          }, {
+            "id" : "drop_field_function",
+            "type" : 11
+          }, {
+            "id" : "new_field_function",
+            "type" : 11
+          }, {
+            "id" : "count_by_partition_filter_function",
+            "type" : 11
+          }, {
+            "id" : "stream_read_multi_connection_function",
+            "type" : 11
+          }, {
+            "id" : "transaction_begin_function",
+            "type" : 11
+          }, {
+            "id" : "transaction_commit_function",
+            "type" : 11
+          }, {
+            "id" : "transaction_rollback_function",
+            "type" : 11
+          }, {
+            "id" : "query_hash_by_advance_filter_function",
+            "type" : 11
+          }, {
+            "id" : "get_stream_offset_function",
+            "type" : 11
+          }, {
+            "id" : "export_event_sql_function",
+            "type" : 11
+          }, {
+            "id" : "flush_offset_function",
+            "type" : 11
+          }, {
+            "id" : "get_table_info_function",
+            "type" : 11
+          }, {
+            "id" : "get_table_names_function",
+            "type" : 11
+          }, {
+            "id" : "error_handle_function",
+            "type" : 11
+          }, {
+            "id" : "execute_command_v2_function",
+            "type" : 11
+          }, {
+            "alternatives" : [ "update_on_exists", "ignore_on_exists", "just_insert" ],
+            "id" : "dml_insert_policy",
+            "type" : 20
+          }, {
+            "alternatives" : [ "ignore_on_nonexists", "insert_on_nonexists", "log_on_nonexists" ],
+            "id" : "dml_update_policy",
+            "type" : 20
+          }, {
+            "alternatives" : [ "ignore_on_nonexists", "log_on_nonexists" ],
+            "id" : "dml_delete_policy",
+            "type" : 20
+          }, {
+            "alternatives" : [ "ignore_all_check", "default_check" ],
+            "id" : "dml_check_policy",
+            "type" : 20
+          }, {
+            "id" : "api_server_supported",
+            "type" : 20
+          }, {
+            "id" : "source_support_exactly_once",
+            "type" : 20
+          }, {
+            "id" : "batch_read_hash_split",
+            "type" : 20
+          }, {
+            "id" : "source_support_partition",
+            "type" : 20
+          } ],
+          "connectionName" : "PGshare",
+          "connectionTags" : [ "Database", "ssl", "doubleActive", "disableForeignKey", "NullsLast" ],
+          "connectionType" : "source_and_target",
+          "hasCreated" : false,
+          "pdkHash" : "8dea069f269dd428d82e60e75d0d91b6dc61be7be26eae7bc407d7b95d3b0594",
+          "pdkType" : "pdk",
+          "position" : [ 190.547, 384.913 ]
+        },
+        "catalog" : "data",
+        "cdcMode" : "logCdc",
+        "cdcPollingBatchSize" : 1000,
+        "cdcPollingFields" : [ {
+          "defaultValue" : "",
+          "field" : ""
+        } ],
+        "cdcPollingInterval" : 500,
+        "compareIgnoreCase" : false,
+        "connectionId" : "69a945c75ea666daafbff2a5",
+        "databaseType" : "PostgreSQL",
+        "ddlConfiguration" : "FILTER",
+        "disabled" : false,
+        "elementType" : "Node",
+        "enableCustomCommand" : false,
+        "esFragmentNum" : 3,
+        "existDataProcessMode" : "keepData",
+        "id" : "16608b68-8a92-4e48-a957-341ccbbd924c",
+        "ignoreMetrics" : false,
+        "increaseReadSize" : 1,
+        "incrementExactlyOnceEnableTimeWindowDay" : 3,
+        "isFilter" : false,
+        "isTransformed" : false,
+        "maxTransactionDuration" : 12.0,
+        "name" : "test_timestamp",
+        "noPkSyncMode" : "ADD_HASH",
+        "nodeConfig" : {
+          "applyDefault" : false,
+          "autoIncCacheValue" : 100,
+          "autoIncJumpValue" : 1000000,
+          "batchReadThreadSize" : 4,
+          "closeNotNull" : false,
+          "createAutoInc" : false,
+          "enableFileInput" : false,
+          "hashSplit" : false,
+          "maxSplit" : 20,
+          "maximumQueueSize" : 8000,
+          "partitionRoot" : false,
+          "splitUpdatePk" : true
+        },
+        "reFullRun" : false,
+        "readBatchSize" : 100,
+        "sourceAndTarget" : false,
+        "syncForeignKeyEnable" : true,
+        "syncSourcePartitionTableEnable" : true,
+        "tableName" : "test_timestamp",
+        "type" : "table",
+        "writeStrategy" : "updateOrInsert",
+        "xmlIncludeFile" : false
+      }, {
+        "alarmRules" : [ {
+          "equalsFlag" : 1,
+          "key" : "DATANODE_AVERAGE_HANDLE_CONSUME",
+          "ms" : 5000,
+          "point" : 12,
+          "times" : 0
+        } ],
+        "alarmSettings" : [ {
+          "interval" : 300,
+          "key" : "DATANODE_AVERAGE_HANDLE_CONSUME",
+          "notify" : [ "SYSTEM", "EMAIL" ],
+          "open" : true,
+          "sort" : 4,
+          "type" : "DATANODE",
+          "unit" : "SECOND"
+        } ],
+        "applyCompareRule" : false,
+        "attrs" : {
+          "accessNodeProcessId" : "",
+          "accessNodeType" : "AUTOMATIC_PLATFORM_ALLOCATION",
+          "capabilities" : [ {
+            "id" : "count_raw_command_function",
+            "type" : 11
+          }, {
+            "id" : "run_raw_command_function",
+            "type" : 11
+          }, {
+            "id" : "execute_command_function",
+            "type" : 11
+          }, {
+            "id" : "release_external_function",
+            "type" : 11
+          }, {
+            "id" : "batch_read_function",
+            "type" : 11
+          }, {
+            "id" : "stream_read_function",
+            "type" : 11
+          }, {
+            "id" : "batch_count_function",
+            "type" : 11
+          }, {
+            "id" : "timestamp_to_stream_offset_function",
+            "type" : 11
+          }, {
+            "id" : "write_record_function",
+            "type" : 11
+          }, {
+            "id" : "after_initial_sync_function",
+            "type" : 11
+          }, {
+            "id" : "query_by_filter_function",
+            "type" : 11
+          }, {
+            "id" : "query_by_advance_filter_function",
+            "type" : 11
+          }, {
+            "id" : "create_table_v2_function",
+            "type" : 11
+          }, {
+            "id" : "clear_table_function",
+            "type" : 11
+          }, {
+            "id" : "drop_table_function",
+            "type" : 11
+          }, {
+            "id" : "create_index_function",
+            "type" : 11
+          }, {
+            "id" : "delete_index_function",
+            "type" : 11
+          }, {
+            "id" : "query_indexes_function",
+            "type" : 11
+          }, {
+            "id" : "query_constraints_function",
+            "type" : 11
+          }, {
+            "id" : "create_constraint_function",
+            "type" : 11
+          }, {
+            "id" : "drop_constraint_function",
+            "type" : 11
+          }, {
+            "id" : "alter_field_attributes_function",
+            "type" : 11
+          }, {
+            "id" : "alter_field_name_function",
+            "type" : 11
+          }, {
+            "id" : "drop_field_function",
+            "type" : 11
+          }, {
+            "id" : "new_field_function",
+            "type" : 11
+          }, {
+            "id" : "count_by_partition_filter_function",
+            "type" : 11
+          }, {
+            "id" : "stream_read_multi_connection_function",
+            "type" : 11
+          }, {
+            "id" : "transaction_begin_function",
+            "type" : 11
+          }, {
+            "id" : "transaction_commit_function",
+            "type" : 11
+          }, {
+            "id" : "transaction_rollback_function",
+            "type" : 11
+          }, {
+            "id" : "query_hash_by_advance_filter_function",
+            "type" : 11
+          }, {
+            "id" : "get_stream_offset_function",
+            "type" : 11
+          }, {
+            "id" : "export_event_sql_function",
+            "type" : 11
+          }, {
+            "id" : "flush_offset_function",
+            "type" : 11
+          }, {
+            "id" : "get_table_info_function",
+            "type" : 11
+          }, {
+            "id" : "get_table_names_function",
+            "type" : 11
+          }, {
+            "id" : "error_handle_function",
+            "type" : 11
+          }, {
+            "id" : "execute_command_v2_function",
+            "type" : 11
+          }, {
+            "alternatives" : [ "update_on_exists", "ignore_on_exists", "just_insert" ],
+            "id" : "dml_insert_policy",
+            "type" : 20
+          }, {
+            "alternatives" : [ "ignore_on_nonexists", "insert_on_nonexists", "log_on_nonexists" ],
+            "id" : "dml_update_policy",
+            "type" : 20
+          }, {
+            "alternatives" : [ "ignore_on_nonexists", "log_on_nonexists" ],
+            "id" : "dml_delete_policy",
+            "type" : 20
+          }, {
+            "alternatives" : [ "ignore_all_check", "default_check" ],
+            "id" : "dml_check_policy",
+            "type" : 20
+          }, {
+            "id" : "api_server_supported",
+            "type" : 20
+          }, {
+            "id" : "source_support_exactly_once",
+            "type" : 20
+          }, {
+            "id" : "batch_read_hash_split",
+            "type" : 20
+          }, {
+            "id" : "source_support_partition",
+            "type" : 20
+          } ],
+          "connectionName" : "PGshare - Copy",
+          "connectionTags" : [ "Database", "ssl", "doubleActive", "disableForeignKey", "NullsLast" ],
+          "connectionType" : "source_and_target",
+          "hasCreated" : false,
+          "pdkHash" : "8dea069f269dd428d82e60e75d0d91b6dc61be7be26eae7bc407d7b95d3b0594",
+          "pdkType" : "pdk",
+          "position" : [ 470.547, 384.913 ]
+        },
+        "catalog" : "data",
+        "cdcPollingBatchSize" : 0,
+        "cdcPollingInterval" : 0,
+        "compareIgnoreCase" : false,
+        "concurrentWritePartitionMap" : { },
+        "connectionId" : "69a947735ea666daafbff2b4",
+        "databaseType" : "PostgreSQL",
+        "disabled" : false,
+        "dmlPolicy" : {
+          "deletePolicy" : "ignore_on_nonexists",
+          "insertPolicy" : "update_on_exists",
+          "updatePolicy" : "ignore_on_nonexists"
+        },
+        "elementType" : "Node",
+        "enableCustomCommand" : false,
+        "esFragmentNum" : 3,
+        "existDataProcessMode" : "dropTable",
+        "id" : "92d2edf7-fd3c-40cf-8884-3a84b73cd08a",
+        "ignoreMetrics" : false,
+        "increaseReadSize" : 1,
+        "incrementExactlyOnceEnable" : false,
+        "incrementExactlyOnceEnableTimeWindowDay" : 3,
+        "isFilter" : false,
+        "isTransformed" : false,
+        "maxTransactionDuration" : 12.0,
+        "name" : "test_timestamp",
+        "noPkSyncMode" : "ADD_HASH",
+        "nodeConfig" : {
+          "applyDefault" : false,
+          "autoIncCacheValue" : 100,
+          "autoIncJumpValue" : 1000000,
+          "batchReadThreadSize" : 4,
+          "closeNotNull" : false,
+          "createAutoInc" : false,
+          "enableFileInput" : false,
+          "hashSplit" : false,
+          "maxSplit" : 20,
+          "maximumQueueSize" : 8000,
+          "partitionRoot" : false,
+          "splitUpdatePk" : true
+        },
+        "reFullRun" : false,
+        "readBatchSize" : 500,
+        "sourceAndTarget" : false,
+        "syncForeignKeyEnable" : true,
+        "syncSourcePartitionTableEnable" : true,
+        "tableName" : "test_timestamp",
+        "type" : "table",
+        "uniqueIndexEnable" : true,
+        "updateConditionFields" : [ "id" ],
+        "writeBatchSize" : 100,
+        "writeBatchWaitMs" : 500,
+        "writeStrategy" : "updateOrInsert",
+        "xmlIncludeFile" : false
+      } ]
+    },
+    "dataSaving" : true,
+    "deduceSchemaTask" : false,
+    "deduplicWriteMode" : "intelligent",
+    "delayTime" : 476,
+    "desc" : "",
+    "doubleActive" : false,
+    "dynamicAdjustMemoryUsage" : false,
+    "editVersion" : "1772740281316",
+    "emailReceivers" : [ ],
+    "enforceShareCdc" : true,
+    "fileLog" : false,
+    "id" : "69a9de815ea666daafbff30b",
+    "increHysteresis" : false,
+    "increOperationMode" : false,
+    "increSyncConcurrency" : false,
+    "increaseReadSize" : 1,
+    "initialSyncTask" : true,
+    "isAutoCreateIndex" : true,
+    "isAutoInspect" : false,
+    "isEdit" : false,
+    "isFilter" : false,
+    "isOpenAutoDDL" : false,
+    "isSchedule" : false,
+    "isStopOnError" : true,
+    "lastStartDate" : 1773248675432,
+    "last_updated" : 1773248822800,
+    "name" : "任务 2",
+    "normalTask" : true,
+    "oldVersionTimezone" : false,
+    "pageVersion" : "1772740112137",
+    "planStartDateFlag" : false,
+    "preview" : false,
+    "previewTask" : false,
+    "processorThreadNum" : 1,
+    "reFullRun" : false,
+    "readBatchSize" : 500,
+    "restartFlag" : false,
+    "shareCache" : false,
+    "shareCdcEnable" : false,
+    "showInspectTips" : false,
+    "skipErrorEvent" : {
+      "errorMode" : "Disable",
+      "errorModeEnum" : "Disable",
+      "limitMode" : "SkipByLimit",
+      "limitModeEnum" : "SkipByLimit"
+    },
+    "snapShotInterrupt" : false,
+    "status" : "edit",
+    "statuses" : [ ],
+    "stopRetryTimes" : 0,
+    "syncPoints" : [ {
+      "connectionId" : "69a945c75ea666daafbff2a5",
+      "connectionName" : "PGshare",
+      "isStreamOffset" : false,
+      "nodeId" : "16608b68-8a92-4e48-a957-341ccbbd924c",
+      "nodeName" : "test_timestamp",
+      "pointType" : "current",
+      "timeZone" : "+8"
+    } ],
+    "syncStatus" : "",
+    "syncType" : "sync",
+    "taskRecordId" : "69b1a0841eea5d0b2cdd1154",
+    "testTask" : false,
+    "testTaskId" : "69a9de815ea666daafbff309",
+    "testUsingPreview" : false,
+    "transformDagHash" : 0,
+    "transformProcess" : 0.0,
+    "transformTaskId" : "69a9de815ea666daafbff30a",
+    "transformUuid" : "1773248644659",
+    "transformed" : true,
+    "type" : "initial_sync+cdc",
+    "writeBatchSize" : 0,
+    "writeBatchWaitMs" : 0,
+    "writeThreadSize" : 8
+  }
+}, {
+  "collectionName" : "MetadataInstances",
+  "json" : {
+    "ancestorsName" : "test_timestamp",
+    "comment" : "",
+    "constraints" : [ ],
+    "createSource" : "job_analyze",
+    "createTime" : 1773248645542,
+    "databaseId" : "69b1845f96fb2a0f68eb07b1",
+    "dev_version" : 1,
+    "fields" : [ {
+      "autoincrement" : "NO",
+      "columnPosition" : 1,
+      "createSource" : "auto",
+      "dataTypeTemp" : "integer",
+      "data_type" : "integer",
+      "default_value" : null,
+      "field_name" : "id",
+      "id" : "69a945c75ea666daafbff2a5_test_timestamp_id",
+      "is_auto_allowed" : true,
+      "is_deleted" : false,
+      "is_nullable" : false,
+      "originalDataType" : "integer",
+      "original_field_name" : "id",
+      "previousDataType" : "integer",
+      "previousFieldName" : "id",
+      "primaryKey" : true,
+      "primary_key_position" : 1,
+      "pure_data_type" : "integer",
+      "source" : "auto",
+      "sourceDbType" : "PostgreSQL",
+      "tapType" : "{\"bit\":32,\"maxValue\":2147483647,\"minValue\":-2147483648,\"precision\":10,\"type\":8}",
+      "unique" : false,
+      "useDefaultValue" : true
+    }, {
+      "autoincrement" : "NO",
+      "columnPosition" : 2,
+      "createSource" : "auto",
+      "dataTypeTemp" : "character varying(50)",
+      "data_type" : "character varying(50)",
+      "default_value" : null,
+      "field_name" : "name",
+      "id" : "69a945c75ea666daafbff2a5_test_timestamp_name",
+      "is_auto_allowed" : true,
+      "is_deleted" : false,
+      "is_nullable" : false,
+      "originalDataType" : "character varying(50)",
+      "original_field_name" : "name",
+      "previousDataType" : "character varying(50)",
+      "previousFieldName" : "name",
+      "primaryKey" : false,
+      "primary_key_position" : 0,
+      "pure_data_type" : "character varying",
+      "source" : "auto",
+      "sourceDbType" : "PostgreSQL",
+      "tapType" : "{\"bytes\":50,\"defaultValue\":10485760,\"type\":10}",
+      "unique" : false,
+      "useDefaultValue" : true
+    }, {
+      "autoincrement" : "NO",
+      "columnPosition" : 3,
+      "createSource" : "auto",
+      "dataTypeTemp" : "bytea",
+      "data_type" : "bytea",
+      "default_value" : null,
+      "field_name" : "ts_field",
+      "id" : "69a945c75ea666daafbff2a5_test_timestamp_ts_field",
+      "is_auto_allowed" : true,
+      "is_deleted" : false,
+      "is_nullable" : true,
+      "originalDataType" : "bytea",
+      "original_field_name" : "ts_field",
+      "previousDataType" : "bytea",
+      "previousFieldName" : "ts_field",
+      "primaryKey" : false,
+      "primary_key_position" : 0,
+      "pure_data_type" : "bytea",
+      "source" : "auto",
+      "sourceDbType" : "PostgreSQL",
+      "tapType" : "{\"bytes\":4294967295,\"type\":9}",
+      "unique" : false,
+      "useDefaultValue" : true
+    } ],
+    "findPossibleDataTypes" : { },
+    "hasPrimaryKey" : true,
+    "hasTransformEx" : false,
+    "hasUnionIndex" : true,
+    "hasUpdateField" : false,
+    "id" : "69b1a08596fb2a0f68ec6cda",
+    "indices" : [ {
+      "columns" : [ {
+        "columnIsAsc" : true,
+        "columnName" : "id",
+        "columnPosition" : 0
+      } ],
+      "coreUnique" : false,
+      "indexName" : "test_timestamp_pkey",
+      "primaryKey" : "true",
+      "unique" : true
+    } ],
+    "is_deleted" : false,
+    "lastUpdate" : 1773241439549,
+    "last_updated" : 1773248645542,
+    "last_user_name" : "admin@admin.com",
+    "meta_type" : "table",
+    "name" : "test_timestamp",
+    "nodeId" : "16608b68-8a92-4e48-a957-341ccbbd924c",
+    "original_name" : "test_timestamp",
+    "partitionSet" : [ ],
+    "qualified_name" : "T_postgres_io_tapdata_1_0-SNAPSHOT_test_timestamp_69a945c75ea666daafbff2a5_69a9de815ea666daafbff30b",
+    "source" : {
+      "_id" : "69a945c75ea666daafbff2a5",
+      "agentTags" : [ ],
+      "connection_type" : "source_and_target",
+      "createUser" : "admin@admin.com",
+      "database_type" : "PostgreSQL",
+      "everLoadSchema" : true,
+      "id" : "69a945c75ea666daafbff2a5",
+      "kafkaAcks" : "-1",
+      "kafkaCompressionType" : "",
+      "kafkaIgnoreInvalidRecord" : false,
+      "kafkaIgnorePushError" : false,
+      "lastUpdBy" : "62bc5008d4958d013d97c7a6",
+      "loadCount" : 62,
+      "loadFieldErrMsg" : "",
+      "loadFieldsStatus" : "finished",
+      "loadSchemaField" : true,
+      "name" : "PGshare",
+      "plain_password" : "",
+      "project" : "",
+      "retry" : 0,
+      "schemaVersion" : "533011ad-4e36-4ba3-9823-c87dd3cef00d",
+      "status" : "ready",
+      "submit" : true,
+      "tableCount" : 62,
+      "testTime" : 1773241439466,
+      "transformed" : true,
+      "user_id" : "62bc5008d4958d013d97c7a6"
+    },
+    "sourceType" : "VIRTUAL",
+    "taskId" : "69a9de815ea666daafbff30b",
+    "transformUuid" : "1773248644659",
+    "username" : "admin@admin.com"
+  }
+}, {
+  "collectionName" : "MetadataInstances",
+  "json" : {
+    "ancestorsName" : "test_timestamp",
+    "comment" : "",
+    "constraints" : [ ],
+    "createSource" : "job_analyze",
+    "createTime" : 1773248645545,
+    "databaseId" : "69b1845f96fb2a0f68eb07b2",
+    "dev_version" : 1,
+    "fields" : [ {
+      "autoincrement" : "NO",
+      "columnPosition" : 1,
+      "createSource" : "auto",
+      "dataTypeTemp" : "integer",
+      "data_type" : "integer",
+      "default_value" : null,
+      "field_name" : "id",
+      "id" : "69a947735ea666daafbff2b4_test_timestamp_id",
+      "is_auto_allowed" : true,
+      "is_deleted" : false,
+      "is_nullable" : false,
+      "originalDataType" : "integer",
+      "original_field_name" : "id",
+      "previousDataType" : "integer",
+      "previousFieldName" : "id",
+      "primaryKey" : true,
+      "primary_key_position" : 1,
+      "pure_data_type" : "integer",
+      "source" : "auto",
+      "sourceDbType" : "PostgreSQL",
+      "tapType" : "{\"bit\":32,\"maxValue\":2147483647,\"minValue\":-2147483648,\"precision\":10,\"type\":8}",
+      "unique" : false,
+      "useDefaultValue" : true
+    }, {
+      "autoincrement" : "NO",
+      "columnPosition" : 2,
+      "createSource" : "auto",
+      "dataTypeTemp" : "character varying(50)",
+      "data_type" : "character varying(50)",
+      "default_value" : null,
+      "field_name" : "name",
+      "id" : "69a947735ea666daafbff2b4_test_timestamp_name",
+      "is_auto_allowed" : true,
+      "is_deleted" : false,
+      "is_nullable" : false,
+      "originalDataType" : "character varying(50)",
+      "original_field_name" : "name",
+      "previousDataType" : "character varying(50)",
+      "previousFieldName" : "name",
+      "primaryKey" : false,
+      "primary_key_position" : 0,
+      "pure_data_type" : "character varying",
+      "source" : "auto",
+      "sourceDbType" : "PostgreSQL",
+      "tapType" : "{\"bytes\":50,\"defaultValue\":10485760,\"type\":10}",
+      "unique" : false,
+      "useDefaultValue" : true
+    }, {
+      "autoincrement" : "NO",
+      "columnPosition" : 3,
+      "createSource" : "auto",
+      "dataTypeTemp" : "bytea",
+      "data_type" : "bytea",
+      "default_value" : null,
+      "field_name" : "ts_field",
+      "id" : "69a947735ea666daafbff2b4_test_timestamp_ts_field",
+      "is_auto_allowed" : true,
+      "is_deleted" : false,
+      "is_nullable" : true,
+      "originalDataType" : "bytea",
+      "original_field_name" : "ts_field",
+      "previousDataType" : "bytea",
+      "previousFieldName" : "ts_field",
+      "primaryKey" : false,
+      "primary_key_position" : 0,
+      "pure_data_type" : "bytea",
+      "source" : "auto",
+      "sourceDbType" : "PostgreSQL",
+      "tapType" : "{\"bytes\":4294967295,\"type\":9}",
+      "unique" : false,
+      "useDefaultValue" : true
+    } ],
+    "findPossibleDataTypes" : { },
+    "hasPrimaryKey" : true,
+    "hasTransformEx" : false,
+    "hasUnionIndex" : true,
+    "hasUpdateField" : false,
+    "id" : "69b1a08596fb2a0f68ec6cdb",
+    "indices" : [ {
+      "columns" : [ {
+        "columnIsAsc" : true,
+        "columnName" : "id",
+        "columnPosition" : 0
+      } ],
+      "coreUnique" : false,
+      "indexName" : "test_timestamp_pkey",
+      "primaryKey" : "true",
+      "unique" : true
+    } ],
+    "is_deleted" : false,
+    "lastUpdate" : 1773241439549,
+    "last_updated" : 1773248645545,
+    "last_user_name" : "admin@admin.com",
+    "meta_type" : "table",
+    "name" : "test_timestamp",
+    "nodeId" : "92d2edf7-fd3c-40cf-8884-3a84b73cd08a",
+    "original_name" : "test_timestamp",
+    "partitionSet" : [ ],
+    "qualified_name" : "T_postgres_io_tapdata_1_0-SNAPSHOT_test_timestamp_69a947735ea666daafbff2b4_69a9de815ea666daafbff30b",
+    "source" : {
+      "_id" : "69a947735ea666daafbff2b4",
+      "agentTags" : [ ],
+      "connection_type" : "source_and_target",
+      "createUser" : "admin@admin.com",
+      "database_type" : "PostgreSQL",
+      "everLoadSchema" : true,
+      "id" : "69a947735ea666daafbff2b4",
+      "kafkaAcks" : "-1",
+      "kafkaCompressionType" : "",
+      "kafkaIgnoreInvalidRecord" : false,
+      "kafkaIgnorePushError" : false,
+      "lastUpdBy" : "62bc5008d4958d013d97c7a6",
+      "loadCount" : 115,
+      "loadFieldErrMsg" : "",
+      "loadFieldsStatus" : "finished",
+      "loadSchemaField" : false,
+      "name" : "PGshare - Copy",
+      "plain_password" : "",
+      "project" : "",
+      "retry" : 0,
+      "schemaVersion" : "515d6c39-a6b5-45cf-8248-4f8e1654788b",
+      "status" : "ready",
+      "submit" : true,
+      "tableCount" : 115,
+      "testTime" : 1773241439497,
+      "transformed" : true,
+      "user_id" : "62bc5008d4958d013d97c7a6"
+    },
+    "sourceType" : "VIRTUAL",
+    "taskId" : "69a9de815ea666daafbff30b",
+    "transformUuid" : "1773248644659",
+    "username" : "admin@admin.com"
+  }
+} ]
