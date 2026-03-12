@@ -1,0 +1,28 @@
+[ {
+  "collectionName" : "GroupInfo",
+  "json" : {
+    "createTime" : 1773253122978,
+    "description" : "",
+    "gitInfo" : {
+      "branch" : "main",
+      "repoUrl" : "https://github.com/ljvv7/ha-cicd-worker.git"
+    },
+    "id" : "69b328a165ad9e4637e33196",
+    "last_updated" : 1773253122978,
+    "name" : "lis",
+    "resetTaskList" : [ ],
+    "resourceItemList" : [ {
+      "id" : "69a94fb25ea666daafbff2bd",
+      "type" : "MIGRATE_TASK"
+    }, {
+      "id" : "69a9de815ea666daafbff30b",
+      "type" : "SYNC_TASK"
+    }, {
+      "id" : "69b18484a0c0e6460120318f",
+      "type" : "MODULE"
+    }, {
+      "id" : "69ae6d44f031ea9d091b211d",
+      "type" : "MODULE"
+    } ]
+  }
+} ]
