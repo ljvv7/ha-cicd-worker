@@ -542,6 +542,10 @@
     "isOpenAutoDDL" : false,
     "isSchedule" : false,
     "isStopOnError" : true,
+    "listtags" : [ {
+      "id" : "69b3670c7171b7720b93fd92",
+      "value" : "abcd"
+    } ],
     "name" : "任务 1",
     "normalTask" : true,
     "oldVersionTimezone" : false,

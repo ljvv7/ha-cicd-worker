@@ -2,6 +2,80 @@
   "collectionName" : "MetadataDefinition",
   "json" : {
     "apiCount" : 0,
+    "createTime" : 1773365004831,
+    "createUser" : "admin@admin.com",
+    "id" : "69b3670c7171b7720b93fd92",
+    "item_type" : [ "dataflow" ],
+    "lastUpdBy" : "62bc5008d4958d013d97c7a6",
+    "last_updated" : 1773365004831,
+    "objCount" : 0,
+    "publishedApiCount" : 0,
+    "user_id" : "62bc5008d4958d013d97c7a6",
+    "value" : "abcd"
+  }
+}, {
+  "collectionName" : "MetadataDefinition",
+  "json" : {
+    "apiCount" : 0,
+    "createTime" : 1773365030447,
+    "createUser" : "admin@admin.com",
+    "id" : "69b367267171b7720b93fd93",
+    "item_type" : [ "inspect" ],
+    "lastUpdBy" : "62bc5008d4958d013d97c7a6",
+    "last_updated" : 1773365030447,
+    "objCount" : 0,
+    "publishedApiCount" : 0,
+    "user_id" : "62bc5008d4958d013d97c7a6",
+    "value" : "fdqe"
+  }
+}, {
+  "collectionName" : "MetadataDefinition",
+  "json" : {
+    "apiCount" : 0,
+    "createTime" : 1773241183989,
+    "id" : "69b1835fa0c0e646012030a9",
+    "item_type" : [ "app" ],
+    "objCount" : 0,
+    "parent_id" : "69b18360a0c0e646012030aa",
+    "publishedApiCount" : 0,
+    "readOnly" : true,
+    "value" : "Default"
+  }
+}, {
+  "collectionName" : "MetadataDefinition",
+  "json" : {
+    "apiCount" : 0,
+    "createTime" : 1773241184118,
+    "createUser" : "admin@admin.com",
+    "id" : "69b18360a0c0e646012030aa",
+    "item_type" : [ "app" ],
+    "lastUpdBy" : "62bc5008d4958d013d97c7a6",
+    "last_updated" : 1773241184118,
+    "objCount" : 0,
+    "parent_id" : "69b1835f96fb2a0f68eaf202",
+    "publishedApiCount" : 0,
+    "user_id" : "62bc5008d4958d013d97c7a6",
+    "value" : "API"
+  }
+}, {
+  "collectionName" : "MetadataDefinition",
+  "json" : {
+    "apiCount" : 0,
+    "createTime" : 1773241183965,
+    "createUser" : "admin@admin.com",
+    "id" : "69b1835f96fb2a0f68eaf202",
+    "item_type" : [ "target" ],
+    "lastUpdBy" : "62bc5008d4958d013d97c7a6",
+    "last_updated" : 1773241183965,
+    "objCount" : 0,
+    "publishedApiCount" : 0,
+    "user_id" : "62bc5008d4958d013d97c7a6",
+    "value" : "TARGET"
+  }
+}, {
+  "collectionName" : "MetadataDefinition",
+  "json" : {
+    "apiCount" : 0,
     "createTime" : 1773241184118,
     "createUser" : "admin@admin.com",
     "id" : "69b18360a0c0e646012030aa",
