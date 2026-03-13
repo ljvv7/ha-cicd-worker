@@ -1,7 +1,6 @@
 [ {
   "collectionName" : "GroupInfo",
   "json" : {
-    "createTime" : 1773253122978,
     "description" : "",
     "gitInfo" : {
       "branch" : "main",
@@ -13,15 +12,27 @@
     "resetTaskList" : [ ],
     "resourceItemList" : [ {
       "id" : "69a94fb25ea666daafbff2bd",
+      "name" : "任务 1",
       "type" : "MIGRATE_TASK"
     }, {
       "id" : "69a9de815ea666daafbff30b",
+      "name" : "任务 2",
       "type" : "SYNC_TASK"
     }, {
       "id" : "69b18484a0c0e6460120318f",
+      "name" : "PGAPI",
       "type" : "MODULE"
     }, {
       "id" : "69ae6d44f031ea9d091b211d",
+      "name" : "ap_text",
+      "type" : "MODULE"
+    }, {
+      "id" : "69b281c2bb068f3c5493cf06",
+      "name" : "PGSD",
+      "type" : "MODULE"
+    }, {
+      "id" : "69b28286bb068f3c5493cf08",
+      "name" : "sdewr",
       "type" : "MODULE"
     } ]
   }

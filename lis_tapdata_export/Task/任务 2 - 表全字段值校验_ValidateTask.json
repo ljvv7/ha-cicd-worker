@@ -20,7 +20,6 @@
       "type" : "INSPECT"
     } ],
     "browserTimezoneOffset" : 0,
-    "byFirstCheckId" : "",
     "cdcDuration" : 0,
     "difference_number" : 0,
     "enabled" : true,
@@ -31,6 +30,10 @@
     "limit" : {
       "keep" : 100
     },
+    "listtags" : [ {
+      "id" : "69b367267171b7720b93fd93",
+      "value" : "fdqe"
+    } ],
     "mode" : "manual",
     "name" : "任务 2 - 表全字段值校验",
     "tasks" : [ {
