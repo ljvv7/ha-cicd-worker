@@ -3,7 +3,7 @@
   "json" : {
     "apiType" : "defaultApi",
     "apiVersion" : "v1",
-    "basePath" : "test",
+    "basePath" : "tessdfwerqersdf",
     "connection" : {
       "date" : 1773625637000,
       "timestamp" : 1773625637
@@ -1512,7 +1512,7 @@
       "type" : "preset",
       "where" : [ ]
     } ],
-    "prefix" : "cpi-case",
+    "prefix" : "cpi-caseasdf",
     "readConcern" : "",
     "readPreference" : "",
     "tableName" : "MDM_HPI_cpi_case"
