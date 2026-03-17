@@ -1,0 +1,2321 @@
+[ {
+  "collectionName" : "Task",
+  "json" : {
+    "_deleted" : true,
+    "accessNodeProcessId" : "",
+    "accessNodeProcessIdList" : [ ],
+    "accessNodeType" : "AUTOMATIC_PLATFORM_ALLOCATION",
+    "alarmRules" : [ {
+      "equalsFlag" : 1,
+      "key" : "TASK_INCREMENT_DELAY",
+      "ms" : 60000,
+      "point" : 60,
+      "times" : 0
+    }, {
+      "equalsFlag" : 0,
+      "key" : "TASK_RETRY_WARN",
+      "ms" : 0,
+      "point" : 0,
+      "times" : 10
+    } ],
+    "alarmSettings" : [ {
+      "interval" : 300,
+      "key" : "TASK_STATUS_ERROR",
+      "notify" : [ "SYSTEM" ],
+      "open" : true,
+      "sort" : 1,
+      "type" : "TASK",
+      "unit" : "SECOND"
+    }, {
+      "interval" : 300,
+      "key" : "TASK_FULL_COMPLETE",
+      "notify" : [ "SYSTEM" ],
+      "open" : true,
+      "sort" : 3,
+      "type" : "TASK",
+      "unit" : "SECOND"
+    }, {
+      "interval" : 300,
+      "key" : "TASK_INCREMENT_START",
+      "notify" : [ "SYSTEM" ],
+      "open" : true,
+      "sort" : 4,
+      "type" : "TASK",
+      "unit" : "SECOND"
+    }, {
+      "interval" : 300,
+      "key" : "TASK_INCREMENT_DELAY",
+      "notify" : [ "SYSTEM" ],
+      "open" : true,
+      "sort" : 6,
+      "type" : "TASK",
+      "unit" : "SECOND"
+    }, {
+      "interval" : 300,
+      "key" : "TASK_INSPECT_DIFFERENCE",
+      "notify" : [ "SYSTEM" ],
+      "open" : true,
+      "sort" : 1,
+      "type" : "TASK",
+      "unit" : "SECOND"
+    }, {
+      "interval" : 300,
+      "key" : "TASK_RETRY_WARN",
+      "notify" : [ "SYSTEM" ],
+      "open" : true,
+      "sort" : 4,
+      "type" : "TASK",
+      "unit" : "SECOND"
+    } ],
+    "attrs" : { },
+    "autoInspect" : false,
+    "blankLog" : false,
+    "canOpenInspect" : false,
+    "cdctask" : false,
+    "checkMemoryHeap" : false,
+    "createTime" : 1773627180379,
+    "crontabExpression" : "",
+    "crontabExpressionFlag" : false,
+    "dag" : {
+      "edges" : [ {
+        "disabled" : false,
+        "source" : "e8c1095a-1da7-423e-9aec-424113a7ecea",
+        "target" : "bf0d2d6b-5855-453a-965b-a5c3d22d0336"
+      }, {
+        "disabled" : false,
+        "source" : "7bcfc9c9-cf88-49aa-b211-03585ffb72b5",
+        "target" : "da81cc68-707d-4b53-8932-558f645feea9"
+      }, {
+        "disabled" : false,
+        "source" : "b70ac00c-2c73-4aaf-9448-ff27c45bccfa",
+        "target" : "da81cc68-707d-4b53-8932-558f645feea9"
+      }, {
+        "disabled" : false,
+        "source" : "da81cc68-707d-4b53-8932-558f645feea9",
+        "target" : "4a033cba-d18c-45a3-9fe0-bb0b652a63d2"
+      }, {
+        "disabled" : false,
+        "source" : "ba864f14-e6bc-470b-9ccd-d0db5a9ac054",
+        "target" : "98f6b61a-2277-4588-bd23-560d97657b60"
+      }, {
+        "disabled" : false,
+        "source" : "98f6b61a-2277-4588-bd23-560d97657b60",
+        "target" : "f6822aed-1714-4cd8-8f46-7019bb7c4f51"
+      }, {
+        "disabled" : false,
+        "source" : "8e1a49c9-de11-4d62-86aa-64227e28b324",
+        "target" : "079652cb-f403-4651-9472-05ed6fc471e3"
+      }, {
+        "disabled" : false,
+        "source" : "079652cb-f403-4651-9472-05ed6fc471e3",
+        "target" : "d1fe9e96-8154-4c09-83c6-54d56c1fa9a3"
+      }, {
+        "disabled" : false,
+        "source" : "589a0dd8-7868-4929-9081-8c2973adc49e",
+        "target" : "ba864f14-e6bc-470b-9ccd-d0db5a9ac054"
+      }, {
+        "disabled" : false,
+        "source" : "93aaad68-f365-4427-b4bd-7e7794ca09eb",
+        "target" : "8e1a49c9-de11-4d62-86aa-64227e28b324"
+      }, {
+        "disabled" : false,
+        "source" : "db71037a-21e1-4c19-8d03-72ea64aa5d52",
+        "target" : "b70ac00c-2c73-4aaf-9448-ff27c45bccfa"
+      }, {
+        "disabled" : false,
+        "source" : "bf0d2d6b-5855-453a-965b-a5c3d22d0336",
+        "target" : "db71037a-21e1-4c19-8d03-72ea64aa5d52"
+      }, {
+        "disabled" : false,
+        "source" : "662e6d65-e79f-4129-9cab-1d636ebdb414",
+        "target" : "10ce11b1-b964-44c5-b3f6-7e96b7756c18"
+      }, {
+        "disabled" : false,
+        "source" : "10ce11b1-b964-44c5-b3f6-7e96b7756c18",
+        "target" : "bea58386-d56d-4b12-810a-59badb713fa6"
+      }, {
+        "disabled" : false,
+        "source" : "f6822aed-1714-4cd8-8f46-7019bb7c4f51",
+        "target" : "da81cc68-707d-4b53-8932-558f645feea9"
+      }, {
+        "disabled" : false,
+        "source" : "bea58386-d56d-4b12-810a-59badb713fa6",
+        "target" : "7bcfc9c9-cf88-49aa-b211-03585ffb72b5"
+      }, {
+        "disabled" : false,
+        "source" : "d1fe9e96-8154-4c09-83c6-54d56c1fa9a3",
+        "target" : "da81cc68-707d-4b53-8932-558f645feea9"
+      } ],
+      "nodes" : [ {
+        "alarmRules" : [ {
+          "equalsFlag" : 1,
+          "key" : "DATANODE_AVERAGE_HANDLE_CONSUME",
+          "ms" : 1000,
+          "point" : 12,
+          "times" : 0
+        } ],
+        "alarmSettings" : [ {
+          "interval" : 300,
+          "key" : "DATANODE_AVERAGE_HANDLE_CONSUME",
+          "notify" : [ "SYSTEM", "EMAIL" ],
+          "open" : true,
+          "sort" : 4,
+          "type" : "DATANODE",
+          "unit" : "SECOND"
+        } ],
+        "applyCompareRule" : false,
+        "attrs" : {
+          "accessNodeProcessId" : "",
+          "accessNodeType" : "AUTOMATIC_PLATFORM_ALLOCATION",
+          "capabilities" : [ {
+            "id" : "source_incremental_update_event_have_before",
+            "type" : 20
+          }, {
+            "id" : "execute_command_function",
+            "type" : 11
+          }, {
+            "id" : "batch_read_function",
+            "type" : 11
+          }, {
+            "id" : "stream_read_function",
+            "type" : 11
+          }, {
+            "id" : "batch_count_function",
+            "type" : 11
+          }, {
+            "id" : "timestamp_to_stream_offset_function",
+            "type" : 11
+          }, {
+            "id" : "write_record_function",
+            "type" : 11
+          }, {
+            "id" : "query_by_advance_filter_function",
+            "type" : 11
+          }, {
+            "id" : "create_table_v2_function",
+            "type" : 11
+          }, {
+            "id" : "drop_table_function",
+            "type" : 11
+          }, {
+            "id" : "create_index_function",
+            "type" : 11
+          }, {
+            "id" : "query_indexes_function",
+            "type" : 11
+          }, {
+            "id" : "count_by_partition_filter_function",
+            "type" : 11
+          }, {
+            "id" : "get_read_partitions_function",
+            "type" : 11
+          }, {
+            "id" : "query_field_min_max_value_function",
+            "type" : 11
+          }, {
+            "id" : "get_table_info_function",
+            "type" : 11
+          }, {
+            "id" : "get_table_names_function",
+            "type" : 11
+          }, {
+            "id" : "error_handle_function",
+            "type" : 11
+          }, {
+            "id" : "master_slave_merge",
+            "type" : 20
+          }, {
+            "id" : "dynamic_schema",
+            "type" : 20
+          }, {
+            "alternatives" : [ "update_on_exists", "ignore_on_exists", "just_insert" ],
+            "id" : "dml_insert_policy",
+            "type" : 20
+          }, {
+            "alternatives" : [ "ignore_on_nonexists", "insert_on_nonexists", "log_on_nonexists" ],
+            "id" : "dml_update_policy",
+            "type" : 20
+          }, {
+            "id" : "api_server_supported",
+            "type" : 20
+          } ],
+          "connectionName" : "FDM",
+          "connectionTags" : [ "schema-free", "Database", "doubleActive" ],
+          "connectionType" : "source_and_target",
+          "db_version" : "7.0.16",
+          "hasCreated" : false,
+          "pdkHash" : "4335aaa005ec1a74a4e2166bded2962e939ad50239f48b023b884f35b54129a5",
+          "pdkType" : "pdk",
+          "position" : [ 50, 140 ]
+        },
+        "catalog" : "data",
+        "cdcMode" : "logCdc",
+        "cdcPollingBatchSize" : 1000,
+        "cdcPollingFields" : [ {
+          "defaultValue" : "",
+          "field" : ""
+        } ],
+        "cdcPollingInterval" : 500,
+        "compareIgnoreCase" : false,
+        "connectionId" : "69b7612501246ccf96bf3593",
+        "databaseType" : "MongoDB",
+        "ddlConfiguration" : "FILTER",
+        "disabled" : false,
+        "elementType" : "Node",
+        "enableCustomCommand" : false,
+        "esFragmentNum" : 3,
+        "existDataProcessMode" : "keepData",
+        "id" : "e8c1095a-1da7-423e-9aec-424113a7ecea",
+        "ignoreMetrics" : false,
+        "increaseReadSize" : 100,
+        "incrementExactlyOnceEnableTimeWindowDay" : 3,
+        "isFilter" : false,
+        "isTransformed" : false,
+        "maxTransactionDuration" : 12.0,
+        "name" : "FDM_HPI_cpi_patient_hospital_data",
+        "noPkSyncMode" : "ADD_HASH",
+        "nodeConfig" : {
+          "enableFillingModifiedData" : false,
+          "noCursorTimeout" : false,
+          "preImage" : true,
+          "writeConcern" : "w1"
+        },
+        "reFullRun" : false,
+        "readBatchSize" : 500,
+        "readPartitionOptions" : {
+          "enable" : false,
+          "hasKVStorage" : true,
+          "maxRecordInPartition" : 200000,
+          "minMaxSplitPieces" : 100,
+          "partitionBatchCount" : 3000,
+          "partitionThreadCount" : 8,
+          "splitType" : 10
+        },
+        "sourceAndTarget" : false,
+        "syncForeignKeyEnable" : true,
+        "tableName" : "FDM_HPI_cpi_patient_hospital_data",
+        "type" : "table",
+        "writeStrategy" : "updateOrInsert",
+        "xmlIncludeFile" : false
+      }, {
+        "alarmRules" : [ {
+          "equalsFlag" : 1,
+          "key" : "PROCESSNODE_AVERAGE_HANDLE_CONSUME",
+          "ms" : 30000,
+          "point" : 60,
+          "times" : 0
+        } ],
+        "alarmSettings" : [ {
+          "interval" : 300,
+          "key" : "PROCESSNODE_AVERAGE_HANDLE_CONSUME",
+          "notify" : [ "SYSTEM", "EMAIL" ],
+          "open" : false,
+          "sort" : 1,
+          "type" : "PROCESSNODE",
+          "unit" : "SECOND"
+        } ],
+        "attrs" : {
+          "capabilities" : [ ],
+          "position" : [ 330, 140 ]
+        },
+        "catalog" : "processor",
+        "concurrentNum" : 2,
+        "disabled" : false,
+        "elementType" : "Node",
+        "id" : "bf0d2d6b-5855-453a-965b-a5c3d22d0336",
+        "isTransformed" : false,
+        "name" : "Standard JS",
+        "script" : "function process(record){\n\t// Enter you code at here\n\tif (record.mrn) {\n\t  record.mrn=safeTrim(record.mrn)\n\t}\n\t\n\n\treturn record;\n\nfunction safeTrim(val) {\n  if (val == null) {\n    return null;\n  } \n  \n    const trimmed = String(val).trim();\n\n    return trimmed === '' ? null :trimmed; //if after trim is blank, return null\n  \n}\n}",
+        "type" : "standard_js_processor"
+      }, {
+        "alarmRules" : [ {
+          "equalsFlag" : 1,
+          "key" : "PROCESSNODE_AVERAGE_HANDLE_CONSUME",
+          "ms" : 30000,
+          "point" : 60,
+          "times" : 0
+        } ],
+        "alarmSettings" : [ {
+          "interval" : 300,
+          "key" : "PROCESSNODE_AVERAGE_HANDLE_CONSUME",
+          "notify" : [ "SYSTEM", "EMAIL" ],
+          "open" : false,
+          "sort" : 1,
+          "type" : "PROCESSNODE",
+          "unit" : "SECOND"
+        } ],
+        "attrs" : {
+          "capabilities" : [ ],
+          "hasNameEdited" : true,
+          "position" : [ 890, 50 ]
+        },
+        "catalog" : "processor",
+        "concurrentNum" : 2,
+        "disabled" : false,
+        "elementType" : "Node",
+        "fieldsNameTransform" : "",
+        "id" : "7bcfc9c9-cf88-49aa-b211-03585ffb72b5",
+        "isTransformed" : false,
+        "name" : "discharge_information",
+        "operations" : [ {
+          "field" : "hospital_code",
+          "id" : "686b23f40f63593100038053_FDM_CMSIP_discharge_information_hospital_code",
+          "op" : "RENAME",
+          "operand" : "hospCode",
+          "primary_key_position" : 0,
+          "type" : "STRING(3)"
+        }, {
+          "field" : "case_no",
+          "id" : "686b23f40f63593100038053_FDM_CMSIP_discharge_information_case_no",
+          "op" : "RENAME",
+          "operand" : "caseNum",
+          "primary_key_position" : 0,
+          "type" : "STRING(12)"
+        }, {
+          "field" : "mo_in_charge_id",
+          "id" : "686b23f40f63593100038053_FDM_CMSIP_discharge_information_mo_in_charge_id",
+          "op" : "RENAME",
+          "operand" : "moInChargeId",
+          "primary_key_position" : 0,
+          "type" : "STRING(12)"
+        }, {
+          "field" : "create_dtm",
+          "id" : "686b23f40f63593100038053_FDM_CMSIP_discharge_information_create_dtm",
+          "op" : "RENAME",
+          "operand" : "createDate",
+          "primary_key_position" : 0,
+          "type" : "DATE_TIME"
+        }, {
+          "field" : "specialist_ic",
+          "id" : "686b23f40f63593100038053_FDM_CMSIP_discharge_information_specialist_ic",
+          "op" : "RENAME",
+          "operand" : "specialistIc",
+          "primary_key_position" : 0,
+          "type" : "STRING(12)"
+        }, {
+          "field" : "discharge_team",
+          "id" : "686b23f40f63593100038053_FDM_CMSIP_discharge_information_discharge_team",
+          "op" : "RENAME",
+          "operand" : "dischargeTeam",
+          "primary_key_position" : 0,
+          "type" : "STRING(5)"
+        } ],
+        "type" : "field_rename_processor"
+      }, {
+        "alarmRules" : [ {
+          "equalsFlag" : 1,
+          "key" : "PROCESSNODE_AVERAGE_HANDLE_CONSUME",
+          "ms" : 30000,
+          "point" : 60,
+          "times" : 0
+        } ],
+        "alarmSettings" : [ {
+          "interval" : 300,
+          "key" : "PROCESSNODE_AVERAGE_HANDLE_CONSUME",
+          "notify" : [ "SYSTEM", "EMAIL" ],
+          "open" : false,
+          "sort" : 1,
+          "type" : "PROCESSNODE",
+          "unit" : "SECOND"
+        } ],
+        "attrs" : {
+          "capabilities" : [ ],
+          "position" : [ 1170, 230 ]
+        },
+        "catalog" : "processor",
+        "concurrentNum" : 2,
+        "disabled" : false,
+        "elementType" : "Node",
+        "externalStorageId" : "69b760af36f7c0a052bc0fb8",
+        "externalStorageName" : "Tapdata MongoDB External Storage",
+        "id" : "da81cc68-707d-4b53-8932-558f645feea9",
+        "isTransformed" : false,
+        "mergeMode" : "main_table_first",
+        "mergeProperties" : [ {
+          "arrayKeys" : [ "hospCode", "caseNum" ],
+          "children" : [ {
+            "arrayKeys" : [ "patientKey" ],
+            "children" : [ {
+              "arrayKeys" : [ "patientKey", "hospCode" ],
+              "children" : [ ],
+              "enableUpdateJoinKeyValue" : false,
+              "id" : "b70ac00c-2c73-4aaf-9448-ff27c45bccfa",
+              "isArray" : false,
+              "joinKeys" : [ {
+                "source" : "patientKey",
+                "target" : "cpiPatient.patientKey"
+              } ],
+              "mergeType" : "updateIntoArray",
+              "tableName" : "Field Rename",
+              "targetPath" : "cpiPatient.hospitalData"
+            } ],
+            "enableUpdateJoinKeyValue" : false,
+            "id" : "f6822aed-1714-4cd8-8f46-7019bb7c4f51",
+            "isArray" : false,
+            "joinKeys" : [ {
+              "source" : "patientKey",
+              "target" : "patientKey"
+            } ],
+            "mergeType" : "updateWrite",
+            "tableName" : "Field Rename",
+            "targetPath" : "cpiPatient"
+          }, {
+            "arrayKeys" : [ "hospCode", "caseNum", "specialty" ],
+            "children" : [ ],
+            "enableUpdateJoinKeyValue" : false,
+            "id" : "7bcfc9c9-cf88-49aa-b211-03585ffb72b5",
+            "isArray" : false,
+            "joinKeys" : [ {
+              "source" : "hospCode",
+              "target" : "hospCode"
+            }, {
+              "source" : "caseNum",
+              "target" : "caseNum"
+            }, {
+              "source" : "specialty",
+              "target" : "lastSpecCode"
+            } ],
+            "mergeType" : "updateIntoArray",
+            "tableName" : "Field Rename",
+            "targetPath" : "dischargeInformation"
+          } ],
+          "enableUpdateJoinKeyValue" : false,
+          "id" : "d1fe9e96-8154-4c09-83c6-54d56c1fa9a3",
+          "isArray" : false,
+          "mergeType" : "updateOrInsert",
+          "tableName" : "Field Rename"
+        } ],
+        "name" : "Master-slave merge",
+        "type" : "merge_table_processor"
+      }, {
+        "alarmRules" : [ {
+          "equalsFlag" : 1,
+          "key" : "PROCESSNODE_AVERAGE_HANDLE_CONSUME",
+          "ms" : 30000,
+          "point" : 60,
+          "times" : 0
+        } ],
+        "alarmSettings" : [ {
+          "interval" : 300,
+          "key" : "PROCESSNODE_AVERAGE_HANDLE_CONSUME",
+          "notify" : [ "SYSTEM", "EMAIL" ],
+          "open" : false,
+          "sort" : 1,
+          "type" : "PROCESSNODE",
+          "unit" : "SECOND"
+        } ],
+        "attrs" : {
+          "capabilities" : [ ],
+          "hasNameEdited" : true,
+          "position" : [ 890, 140 ]
+        },
+        "catalog" : "processor",
+        "concurrentNum" : 2,
+        "disabled" : false,
+        "elementType" : "Node",
+        "fieldsNameTransform" : "",
+        "id" : "b70ac00c-2c73-4aaf-9448-ff27c45bccfa",
+        "isTransformed" : false,
+        "name" : "cpi_patient_hospital_data",
+        "operations" : [ {
+          "field" : "patient_key",
+          "id" : "686b23f40f63593100038053_FDM_HPI_cpi_patient_hospital_data_patient_key",
+          "op" : "RENAME",
+          "operand" : "patientKey",
+          "primary_key_position" : 1,
+          "type" : "STRING(16)"
+        }, {
+          "field" : "hospital_code",
+          "id" : "686b23f40f63593100038053_FDM_HPI_cpi_patient_hospital_data_hospital_code",
+          "op" : "RENAME",
+          "operand" : "hospCode",
+          "primary_key_position" : 2,
+          "type" : "STRING(6)"
+        } ],
+        "type" : "field_rename_processor"
+      }, {
+        "alarmRules" : [ {
+          "equalsFlag" : 1,
+          "key" : "DATANODE_AVERAGE_HANDLE_CONSUME",
+          "ms" : 1000,
+          "point" : 12,
+          "times" : 0
+        } ],
+        "alarmSettings" : [ {
+          "interval" : 300,
+          "key" : "DATANODE_AVERAGE_HANDLE_CONSUME",
+          "notify" : [ "SYSTEM", "EMAIL" ],
+          "open" : true,
+          "sort" : 4,
+          "type" : "DATANODE",
+          "unit" : "SECOND"
+        } ],
+        "applyCompareRule" : false,
+        "attrs" : {
+          "accessNodeProcessId" : "",
+          "accessNodeType" : "AUTOMATIC_PLATFORM_ALLOCATION",
+          "capabilities" : [ {
+            "id" : "source_incremental_update_event_have_before",
+            "type" : 20
+          }, {
+            "id" : "execute_command_function",
+            "type" : 11
+          }, {
+            "id" : "batch_read_function",
+            "type" : 11
+          }, {
+            "id" : "stream_read_function",
+            "type" : 11
+          }, {
+            "id" : "batch_count_function",
+            "type" : 11
+          }, {
+            "id" : "timestamp_to_stream_offset_function",
+            "type" : 11
+          }, {
+            "id" : "write_record_function",
+            "type" : 11
+          }, {
+            "id" : "query_by_advance_filter_function",
+            "type" : 11
+          }, {
+            "id" : "create_table_v2_function",
+            "type" : 11
+          }, {
+            "id" : "drop_table_function",
+            "type" : 11
+          }, {
+            "id" : "create_index_function",
+            "type" : 11
+          }, {
+            "id" : "query_indexes_function",
+            "type" : 11
+          }, {
+            "id" : "count_by_partition_filter_function",
+            "type" : 11
+          }, {
+            "id" : "get_read_partitions_function",
+            "type" : 11
+          }, {
+            "id" : "query_field_min_max_value_function",
+            "type" : 11
+          }, {
+            "id" : "transaction_begin_function",
+            "type" : 11
+          }, {
+            "id" : "transaction_commit_function",
+            "type" : 11
+          }, {
+            "id" : "transaction_rollback_function",
+            "type" : 11
+          }, {
+            "id" : "get_table_info_function",
+            "type" : 11
+          }, {
+            "id" : "get_table_names_function",
+            "type" : 11
+          }, {
+            "id" : "error_handle_function",
+            "type" : 11
+          }, {
+            "id" : "master_slave_merge",
+            "type" : 20
+          }, {
+            "id" : "dynamic_schema",
+            "type" : 20
+          }, {
+            "alternatives" : [ "update_on_exists", "ignore_on_exists", "just_insert" ],
+            "id" : "dml_insert_policy",
+            "type" : 20
+          }, {
+            "alternatives" : [ "ignore_on_nonexists", "insert_on_nonexists", "log_on_nonexists" ],
+            "id" : "dml_update_policy",
+            "type" : 20
+          }, {
+            "id" : "api_server_supported",
+            "type" : 20
+          }, {
+            "id" : "source_support_exactly_once",
+            "type" : 20
+          } ],
+          "connectionName" : "MDM",
+          "connectionTags" : [ "schema-free", "Database", "doubleActive" ],
+          "connectionType" : "source_and_target",
+          "db_version" : "8.0.9",
+          "hasCreated" : true,
+          "pdkHash" : "4335aaa005ec1a74a4e2166bded2962e939ad50239f48b023b884f35b54129a5",
+          "pdkType" : "pdk",
+          "position" : [ 1450, 230 ]
+        },
+        "catalog" : "data",
+        "cdcConcurrent" : false,
+        "cdcPollingBatchSize" : 0,
+        "cdcPollingInterval" : 0,
+        "compareIgnoreCase" : false,
+        "concurrentWritePartitionMap" : {
+          "MDM_HPI_cpi_case" : [ "hospCode", "caseNum" ]
+        },
+        "connectionId" : "69b7612501246ccf96bf359a",
+        "databaseType" : "MongoDB",
+        "disabled" : false,
+        "dmlPolicy" : {
+          "insertPolicy" : "update_on_exists",
+          "updatePolicy" : "ignore_on_nonexists"
+        },
+        "elementType" : "Node",
+        "enableCustomCommand" : false,
+        "esFragmentNum" : 3,
+        "existDataProcessMode" : "dropTable",
+        "id" : "4a033cba-d18c-45a3-9fe0-bb0b652a63d2",
+        "ignoreMetrics" : false,
+        "increaseReadSize" : 1,
+        "incrementExactlyOnceEnable" : true,
+        "incrementExactlyOnceEnableTimeWindowDay" : 3,
+        "isFilter" : false,
+        "isTransformed" : false,
+        "maxTransactionDuration" : 12.0,
+        "name" : "MDM_HPI_cpi_case",
+        "noPkSyncMode" : "ALL_COLUMNS",
+        "nodeConfig" : {
+          "enableSaveDeleteData" : false,
+          "preImage4Sink" : false,
+          "shardCollection" : false,
+          "syncIndex" : false,
+          "timeSeriesCollection" : false,
+          "writeConcern" : "w1"
+        },
+        "reFullRun" : false,
+        "readBatchSize" : 500,
+        "sourceAndTarget" : false,
+        "syncForeignKeyEnable" : true,
+        "tableName" : "MDM_HPI_cpi_case",
+        "type" : "table",
+        "uniqueIndexEnable" : true,
+        "updateConditionFields" : [ "hospCode", "caseNum" ],
+        "writeBatchSize" : 8000,
+        "writeBatchWaitMs" : 100,
+        "writeStrategy" : "updateOrInsert",
+        "xmlIncludeFile" : false
+      }, {
+        "alarmRules" : [ {
+          "equalsFlag" : 1,
+          "key" : "PROCESSNODE_AVERAGE_HANDLE_CONSUME",
+          "ms" : 30000,
+          "point" : 60,
+          "times" : 0
+        } ],
+        "alarmSettings" : [ {
+          "interval" : 300,
+          "key" : "PROCESSNODE_AVERAGE_HANDLE_CONSUME",
+          "notify" : [ "SYSTEM", "EMAIL" ],
+          "open" : false,
+          "sort" : 1,
+          "type" : "PROCESSNODE",
+          "unit" : "SECOND"
+        } ],
+        "attrs" : {
+          "capabilities" : [ ],
+          "position" : [ 330, 230 ]
+        },
+        "catalog" : "processor",
+        "concurrentNum" : 2,
+        "disabled" : false,
+        "elementType" : "Node",
+        "id" : "ba864f14-e6bc-470b-9ccd-d0db5a9ac054",
+        "isTransformed" : false,
+        "name" : "Standard JS",
+        "script" : "function process(record){\n\t// Enter you code at here\n\tif (record.hkid) {\n\t  record.hkid=safeTrim(record.hkid)\n\t}\n\t\n\n\treturn record;\n\n\nfunction safeTrim(val) {\n  if (val == null) {\n    return null;\n  } \n  \n    const trimmed = String(val).trim();\n\n    return trimmed === '' ? null :trimmed; //if after trim is blank, return null\n  \n}\n}",
+        "type" : "standard_js_processor"
+      }, {
+        "alarmRules" : [ {
+          "equalsFlag" : 1,
+          "key" : "PROCESSNODE_AVERAGE_HANDLE_CONSUME",
+          "ms" : 30000,
+          "point" : 60,
+          "times" : 0
+        } ],
+        "alarmSettings" : [ {
+          "interval" : 300,
+          "key" : "PROCESSNODE_AVERAGE_HANDLE_CONSUME",
+          "notify" : [ "SYSTEM", "EMAIL" ],
+          "open" : false,
+          "sort" : 1,
+          "type" : "PROCESSNODE",
+          "unit" : "SECOND"
+        } ],
+        "attrs" : {
+          "capabilities" : [ ],
+          "position" : [ 610, 230 ]
+        },
+        "catalog" : "processor",
+        "concurrentNum" : 2,
+        "deleteAllFields" : false,
+        "disabled" : false,
+        "elementType" : "Node",
+        "id" : "98f6b61a-2277-4588-bd23-560d97657b60",
+        "isTransformed" : false,
+        "name" : "Add and delete fields",
+        "operations" : [ {
+          "field" : "cccode1",
+          "id" : "686b23f40f63593100038053_FDM_HPI_cpi_patient_cccode1",
+          "label" : "cccode1",
+          "op" : "REMOVE",
+          "operand" : "true",
+          "primary_key_position" : 0,
+          "type" : "STRING(10)"
+        }, {
+          "field" : "cccode2",
+          "id" : "686b23f40f63593100038053_FDM_HPI_cpi_patient_cccode2",
+          "label" : "cccode2",
+          "op" : "REMOVE",
+          "operand" : "true",
+          "primary_key_position" : 0,
+          "type" : "STRING(10)"
+        }, {
+          "field" : "cccode3",
+          "id" : "686b23f40f63593100038053_FDM_HPI_cpi_patient_cccode3",
+          "label" : "cccode3",
+          "op" : "REMOVE",
+          "operand" : "true",
+          "primary_key_position" : 0,
+          "type" : "STRING(10)"
+        }, {
+          "field" : "cccode4",
+          "id" : "686b23f40f63593100038053_FDM_HPI_cpi_patient_cccode4",
+          "label" : "cccode4",
+          "op" : "REMOVE",
+          "operand" : "true",
+          "primary_key_position" : 0,
+          "type" : "STRING(10)"
+        }, {
+          "field" : "cccode5",
+          "id" : "686b23f40f63593100038053_FDM_HPI_cpi_patient_cccode5",
+          "label" : "cccode5",
+          "op" : "REMOVE",
+          "operand" : "true",
+          "primary_key_position" : 0,
+          "type" : "STRING(10)"
+        }, {
+          "field" : "cccode6",
+          "id" : "686b23f40f63593100038053_FDM_HPI_cpi_patient_cccode6",
+          "label" : "cccode6",
+          "op" : "REMOVE",
+          "operand" : "true",
+          "primary_key_position" : 0,
+          "type" : "STRING(10)"
+        }, {
+          "field" : "marital_status",
+          "id" : "686b23f40f63593100038053_FDM_HPI_cpi_patient_marital_status",
+          "label" : "marital_status",
+          "op" : "REMOVE",
+          "operand" : "true",
+          "primary_key_position" : 0,
+          "type" : "STRING(2)"
+        }, {
+          "field" : "race",
+          "id" : "686b23f40f63593100038053_FDM_HPI_cpi_patient_race",
+          "label" : "race",
+          "op" : "REMOVE",
+          "operand" : "true",
+          "primary_key_position" : 0,
+          "type" : "STRING(4)"
+        }, {
+          "field" : "other_doc_no",
+          "id" : "686b23f40f63593100038053_FDM_HPI_cpi_patient_other_doc_no",
+          "label" : "other_doc_no",
+          "op" : "REMOVE",
+          "operand" : "true",
+          "primary_key_position" : 0,
+          "type" : "STRING(24)"
+        }, {
+          "field" : "reference",
+          "id" : "686b23f40f63593100038053_FDM_HPI_cpi_patient_reference",
+          "label" : "reference",
+          "op" : "REMOVE",
+          "operand" : "true",
+          "primary_key_position" : 0,
+          "type" : "STRING(40)"
+        }, {
+          "field" : "building",
+          "id" : "686b23f40f63593100038053_FDM_HPI_cpi_patient_building",
+          "label" : "building",
+          "op" : "REMOVE",
+          "operand" : "true",
+          "primary_key_position" : 0,
+          "type" : "STRING(94)"
+        }, {
+          "field" : "room",
+          "id" : "686b23f40f63593100038053_FDM_HPI_cpi_patient_room",
+          "label" : "room",
+          "op" : "REMOVE",
+          "operand" : "true",
+          "primary_key_position" : 0,
+          "type" : "STRING(10)"
+        }, {
+          "field" : "floor",
+          "id" : "686b23f40f63593100038053_FDM_HPI_cpi_patient_floor",
+          "label" : "floor",
+          "op" : "REMOVE",
+          "operand" : "true",
+          "primary_key_position" : 0,
+          "type" : "STRING(4)"
+        }, {
+          "field" : "block",
+          "id" : "686b23f40f63593100038053_FDM_HPI_cpi_patient_block",
+          "label" : "block",
+          "op" : "REMOVE",
+          "operand" : "true",
+          "primary_key_position" : 0,
+          "type" : "STRING(4)"
+        }, {
+          "field" : "district",
+          "id" : "686b23f40f63593100038053_FDM_HPI_cpi_patient_district",
+          "label" : "district",
+          "op" : "REMOVE",
+          "operand" : "true",
+          "primary_key_position" : 0,
+          "type" : "STRING(10)"
+        }, {
+          "field" : "religion",
+          "id" : "686b23f40f63593100038053_FDM_HPI_cpi_patient_religion",
+          "label" : "religion",
+          "op" : "REMOVE",
+          "operand" : "true",
+          "primary_key_position" : 0,
+          "type" : "STRING(6)"
+        }, {
+          "field" : "phone1",
+          "id" : "686b23f40f63593100038053_FDM_HPI_cpi_patient_phone1",
+          "label" : "phone1",
+          "op" : "REMOVE",
+          "operand" : "true",
+          "primary_key_position" : 0,
+          "type" : "STRING(20)"
+        }, {
+          "field" : "phone2",
+          "id" : "686b23f40f63593100038053_FDM_HPI_cpi_patient_phone2",
+          "label" : "phone2",
+          "op" : "REMOVE",
+          "operand" : "true",
+          "primary_key_position" : 0,
+          "type" : "STRING(20)"
+        }, {
+          "field" : "address_indicator",
+          "id" : "686b23f40f63593100038053_FDM_HPI_cpi_patient_address_indicator",
+          "label" : "address_indicator",
+          "op" : "REMOVE",
+          "operand" : "true",
+          "primary_key_position" : 0,
+          "type" : "STRING(8)"
+        }, {
+          "field" : "mobile_phone",
+          "id" : "686b23f40f63593100038053_FDM_HPI_cpi_patient_mobile_phone",
+          "label" : "mobile_phone",
+          "op" : "REMOVE",
+          "operand" : "true",
+          "primary_key_position" : 0,
+          "type" : "STRING(20)"
+        }, {
+          "field" : "sms_language",
+          "id" : "686b23f40f63593100038053_FDM_HPI_cpi_patient_sms_language",
+          "label" : "sms_language",
+          "op" : "REMOVE",
+          "operand" : "true",
+          "primary_key_position" : 0,
+          "type" : "STRING(8)"
+        }, {
+          "field" : "card_holder",
+          "id" : "686b23f40f63593100038053_FDM_HPI_cpi_patient_card_holder",
+          "label" : "card_holder",
+          "op" : "REMOVE",
+          "operand" : "true",
+          "primary_key_position" : 0,
+          "type" : "INT32"
+        }, {
+          "field" : "patient_no",
+          "id" : "686b23f40f63593100038053_FDM_HPI_cpi_patient_patient_no",
+          "label" : "patient_no",
+          "op" : "REMOVE",
+          "operand" : "true",
+          "primary_key_position" : 0,
+          "type" : "INT32"
+        }, {
+          "field" : "security",
+          "id" : "686b23f40f63593100038053_FDM_HPI_cpi_patient_security",
+          "label" : "security",
+          "op" : "REMOVE",
+          "operand" : "true",
+          "primary_key_position" : 0,
+          "type" : "INT32"
+        }, {
+          "field" : "create_hospital",
+          "id" : "686b23f40f63593100038053_FDM_HPI_cpi_patient_create_hospital",
+          "label" : "create_hospital",
+          "op" : "REMOVE",
+          "operand" : "true",
+          "primary_key_position" : 0,
+          "type" : "STRING(6)"
+        }, {
+          "field" : "create_by",
+          "id" : "686b23f40f63593100038053_FDM_HPI_cpi_patient_create_by",
+          "label" : "create_by",
+          "op" : "REMOVE",
+          "operand" : "true",
+          "primary_key_position" : 0,
+          "type" : "STRING(24)"
+        }, {
+          "field" : "create_dtm",
+          "id" : "686b23f40f63593100038053_FDM_HPI_cpi_patient_create_dtm",
+          "label" : "create_dtm",
+          "op" : "REMOVE",
+          "operand" : "true",
+          "primary_key_position" : 0,
+          "type" : "DATE_TIME"
+        }, {
+          "field" : "update_hospital",
+          "id" : "686b23f40f63593100038053_FDM_HPI_cpi_patient_update_hospital",
+          "label" : "update_hospital",
+          "op" : "REMOVE",
+          "operand" : "true",
+          "primary_key_position" : 0,
+          "type" : "STRING(6)"
+        }, {
+          "field" : "update_by",
+          "id" : "686b23f40f63593100038053_FDM_HPI_cpi_patient_update_by",
+          "label" : "update_by",
+          "op" : "REMOVE",
+          "operand" : "true",
+          "primary_key_position" : 0,
+          "type" : "STRING(24)"
+        }, {
+          "field" : "update_dtm",
+          "id" : "686b23f40f63593100038053_FDM_HPI_cpi_patient_update_dtm",
+          "label" : "update_dtm",
+          "op" : "REMOVE",
+          "operand" : "true",
+          "primary_key_position" : 0,
+          "type" : "DATE_TIME"
+        }, {
+          "field" : "rep_clusters",
+          "id" : "686b23f40f63593100038053_FDM_HPI_cpi_patient_rep_clusters",
+          "label" : "rep_clusters",
+          "op" : "REMOVE",
+          "operand" : "true",
+          "primary_key_position" : 0,
+          "type" : "INT32"
+        }, {
+          "field" : "init_hospital",
+          "id" : "686b23f40f63593100038053_FDM_HPI_cpi_patient_init_hospital",
+          "label" : "init_hospital",
+          "op" : "REMOVE",
+          "operand" : "true",
+          "primary_key_position" : 0,
+          "type" : "INT32"
+        }, {
+          "field" : "row_update_datetime",
+          "id" : "686b23f40f63593100038053_FDM_HPI_cpi_patient_row_update_datetime",
+          "label" : "row_update_datetime",
+          "op" : "REMOVE",
+          "operand" : "true",
+          "primary_key_position" : 0,
+          "type" : "DATE_TIME"
+        }, {
+          "field" : "init_source",
+          "id" : "686b23f40f63593100038053_FDM_HPI_cpi_patient_init_source",
+          "label" : "init_source",
+          "op" : "REMOVE",
+          "operand" : "true",
+          "primary_key_position" : 0,
+          "type" : "INT32"
+        }, {
+          "field" : "rep_hosp2",
+          "id" : "686b23f40f63593100038053_FDM_HPI_cpi_patient_rep_hosp2",
+          "label" : "rep_hosp2",
+          "op" : "REMOVE",
+          "operand" : "true",
+          "primary_key_position" : 0,
+          "type" : "INT32"
+        }, {
+          "field" : "rep_hosp1",
+          "id" : "686b23f40f63593100038053_FDM_HPI_cpi_patient_rep_hosp1",
+          "label" : "rep_hosp1",
+          "op" : "REMOVE",
+          "operand" : "true",
+          "primary_key_position" : 0,
+          "type" : "INT32"
+        }, {
+          "field" : "rep_clinic1",
+          "id" : "686b23f40f63593100038053_FDM_HPI_cpi_patient_rep_clinic1",
+          "label" : "rep_clinic1",
+          "op" : "REMOVE",
+          "operand" : "true",
+          "primary_key_position" : 0,
+          "type" : "INT32"
+        }, {
+          "field" : "body_category",
+          "id" : "686b23f40f63593100038053_FDM_HPI_cpi_patient_body_category",
+          "label" : "body_category",
+          "op" : "REMOVE",
+          "operand" : "true",
+          "primary_key_position" : 0,
+          "type" : "STRING(2)"
+        }, {
+          "field" : "rep_clinic2",
+          "id" : "686b23f40f63593100038053_FDM_HPI_cpi_patient_rep_clinic2",
+          "label" : "rep_clinic2",
+          "op" : "REMOVE",
+          "operand" : "true",
+          "primary_key_position" : 0,
+          "type" : "INT32"
+        }, {
+          "field" : "hkic_symbol",
+          "id" : "686b23f40f63593100038053_FDM_HPI_cpi_patient_hkic_symbol",
+          "label" : "hkic_symbol",
+          "op" : "REMOVE",
+          "operand" : "true",
+          "primary_key_position" : 0,
+          "type" : "STRING(2)"
+        }, {
+          "field" : "exact_dob_flag",
+          "id" : "686b23f40f63593100038053_FDM_HPI_cpi_patient_exact_dob_flag",
+          "label" : "exact_dob_flag",
+          "op" : "REMOVE",
+          "operand" : "true",
+          "primary_key_position" : 0,
+          "type" : "STRING(2)"
+        }, {
+          "field" : "death_code",
+          "id" : "686b23f40f63593100038053_FDM_HPI_cpi_patient_death_code",
+          "label" : "death_code",
+          "op" : "REMOVE",
+          "operand" : "true",
+          "primary_key_position" : 0,
+          "type" : "STRING(8)"
+        } ],
+        "type" : "field_add_del_processor"
+      }, {
+        "alarmRules" : [ {
+          "equalsFlag" : 1,
+          "key" : "PROCESSNODE_AVERAGE_HANDLE_CONSUME",
+          "ms" : 30000,
+          "point" : 60,
+          "times" : 0
+        } ],
+        "alarmSettings" : [ {
+          "interval" : 300,
+          "key" : "PROCESSNODE_AVERAGE_HANDLE_CONSUME",
+          "notify" : [ "SYSTEM", "EMAIL" ],
+          "open" : false,
+          "sort" : 1,
+          "type" : "PROCESSNODE",
+          "unit" : "SECOND"
+        } ],
+        "attrs" : {
+          "capabilities" : [ ],
+          "hasNameEdited" : true,
+          "position" : [ 890, 230 ]
+        },
+        "catalog" : "processor",
+        "concurrentNum" : 2,
+        "disabled" : false,
+        "elementType" : "Node",
+        "fieldsNameTransform" : "",
+        "id" : "f6822aed-1714-4cd8-8f46-7019bb7c4f51",
+        "isTransformed" : false,
+        "name" : "cpi_patient",
+        "operations" : [ {
+          "field" : "access_code",
+          "id" : "686b23f40f63593100038053_FDM_HPI_cpi_patient_access_code",
+          "op" : "RENAME",
+          "operand" : "accessCode",
+          "primary_key_position" : 0,
+          "type" : "INT32"
+        }, {
+          "field" : "death_date",
+          "id" : "686b23f40f63593100038053_FDM_HPI_cpi_patient_death_date",
+          "op" : "RENAME",
+          "operand" : "deathDate",
+          "primary_key_position" : 0,
+          "type" : "DATE_TIME"
+        }, {
+          "field" : "death_indicator",
+          "id" : "686b23f40f63593100038053_FDM_HPI_cpi_patient_death_indicator",
+          "op" : "RENAME",
+          "operand" : "deathIndicator",
+          "primary_key_position" : 0,
+          "type" : "STRING(2)"
+        }, {
+          "field" : "chi_name",
+          "id" : "686b23f40f63593100038053_FDM_HPI_cpi_patient_chi_name",
+          "op" : "RENAME",
+          "operand" : "chiName",
+          "primary_key_position" : 0,
+          "type" : "STRING(24)"
+        }, {
+          "field" : "patient_name",
+          "id" : "686b23f40f63593100038053_FDM_HPI_cpi_patient_patient_name",
+          "op" : "RENAME",
+          "operand" : "patientName",
+          "primary_key_position" : 0,
+          "type" : "STRING(96)"
+        }, {
+          "field" : "patient_key",
+          "id" : "686b23f40f63593100038053_FDM_HPI_cpi_patient_patient_key",
+          "op" : "RENAME",
+          "operand" : "patientKey",
+          "primary_key_position" : 1,
+          "type" : "STRING(16)"
+        } ],
+        "type" : "field_rename_processor"
+      }, {
+        "alarmRules" : [ {
+          "equalsFlag" : 1,
+          "key" : "PROCESSNODE_AVERAGE_HANDLE_CONSUME",
+          "ms" : 30000,
+          "point" : 60,
+          "times" : 0
+        } ],
+        "alarmSettings" : [ {
+          "interval" : 300,
+          "key" : "PROCESSNODE_AVERAGE_HANDLE_CONSUME",
+          "notify" : [ "SYSTEM", "EMAIL" ],
+          "open" : false,
+          "sort" : 1,
+          "type" : "PROCESSNODE",
+          "unit" : "SECOND"
+        } ],
+        "attrs" : {
+          "capabilities" : [ ],
+          "hasNameEdited" : true,
+          "position" : [ 330, 320 ]
+        },
+        "catalog" : "processor",
+        "concurrentNum" : 2,
+        "disabled" : false,
+        "elementType" : "Node",
+        "id" : "8e1a49c9-de11-4d62-86aa-64227e28b324",
+        "isTransformed" : false,
+        "name" : "cpi_case",
+        "script" : "function process(record){\n\t// Enter you code at here\n\tif(record.case_no){\n\t  record.case_no=safeTrim(record.case_no)\n\t}\n\tif (record.hospital_code) {\n\t  record.hospital_code=safeTrim(record.hospital_code)\n\t}\n\tif (record.last_specialty) {\n\t  record.last_specialty=safeTrim(record.last_specialty)\n\t}\n\tif (record.last_ward_code) {\n\t  record.last_ward_code=safeTrim(record.last_ward_code)\n\t}\n\tif (record.status_code) {\n\t  record.status_code=safeTrim(record.status_code)\n\t}\n\tif (record.case_type) {\n\t  record.case_type=safeTrim(record.case_type)\n\t}\n\t\n\n\t\n  // log.warn(record.case_no)\n\treturn record;\n\n\nfunction safeTrim(val) {\n  if (val == null) {\n    return null;\n  } \n  \n    const trimmed = String(val).trim();\n\n    return trimmed === '' ? null :trimmed; //if after trim is blank, return null\n  \n}}",
+        "type" : "standard_js_processor"
+      }, {
+        "alarmRules" : [ {
+          "equalsFlag" : 1,
+          "key" : "PROCESSNODE_AVERAGE_HANDLE_CONSUME",
+          "ms" : 30000,
+          "point" : 60,
+          "times" : 0
+        } ],
+        "alarmSettings" : [ {
+          "interval" : 300,
+          "key" : "PROCESSNODE_AVERAGE_HANDLE_CONSUME",
+          "notify" : [ "SYSTEM", "EMAIL" ],
+          "open" : false,
+          "sort" : 1,
+          "type" : "PROCESSNODE",
+          "unit" : "SECOND"
+        } ],
+        "attrs" : {
+          "capabilities" : [ ],
+          "position" : [ 610, 320 ]
+        },
+        "catalog" : "processor",
+        "concurrentNum" : 2,
+        "deleteAllFields" : false,
+        "disabled" : false,
+        "elementType" : "Node",
+        "id" : "079652cb-f403-4651-9472-05ed6fc471e3",
+        "isTransformed" : false,
+        "name" : "Add and delete fields",
+        "operations" : [ {
+          "field" : "document_flag",
+          "id" : "686b23f40f63593100038053_FDM_HPI_cpi_case_document_flag",
+          "label" : "document_flag",
+          "op" : "REMOVE",
+          "operand" : "true",
+          "primary_key_position" : 0,
+          "type" : "STRING(2)"
+        }, {
+          "field" : "mrt_indicator",
+          "id" : "686b23f40f63593100038053_FDM_HPI_cpi_case_mrt_indicator",
+          "label" : "mrt_indicator",
+          "op" : "REMOVE",
+          "operand" : "true",
+          "primary_key_position" : 0,
+          "type" : "STRING(2)"
+        }, {
+          "field" : "district_code",
+          "id" : "686b23f40f63593100038053_FDM_HPI_cpi_case_district_code",
+          "label" : "district_code",
+          "op" : "REMOVE",
+          "operand" : "true",
+          "primary_key_position" : 0,
+          "type" : "STRING(10)"
+        }, {
+          "field" : "movement_count",
+          "id" : "686b23f40f63593100038053_FDM_HPI_cpi_case_movement_count",
+          "label" : "movement_count",
+          "op" : "REMOVE",
+          "operand" : "true",
+          "primary_key_position" : 0,
+          "type" : "INT32"
+        }, {
+          "field" : "row_update_datetime",
+          "id" : "686b23f40f63593100038053_FDM_HPI_cpi_case_row_update_datetime",
+          "label" : "row_update_datetime",
+          "op" : "REMOVE",
+          "operand" : "true",
+          "primary_key_position" : 0,
+          "type" : "DATE_TIME"
+        }, {
+          "field" : "update_dtm",
+          "id" : "686b23f40f63593100038053_FDM_HPI_cpi_case_update_dtm",
+          "label" : "update_dtm",
+          "op" : "REMOVE",
+          "operand" : "true",
+          "primary_key_position" : 0,
+          "type" : "DATE_TIME"
+        }, {
+          "field" : "update_by",
+          "id" : "686b23f40f63593100038053_FDM_HPI_cpi_case_update_by",
+          "label" : "update_by",
+          "op" : "REMOVE",
+          "operand" : "true",
+          "primary_key_position" : 0,
+          "type" : "STRING(24)"
+        }, {
+          "field" : "create_by",
+          "id" : "686b23f40f63593100038053_FDM_HPI_cpi_case_create_by",
+          "label" : "create_by",
+          "op" : "REMOVE",
+          "operand" : "true",
+          "primary_key_position" : 0,
+          "type" : "STRING(24)"
+        }, {
+          "field" : "access_code",
+          "id" : "686b23f40f63593100038053_FDM_HPI_cpi_case_access_code",
+          "label" : "access_code",
+          "op" : "REMOVE",
+          "operand" : "true",
+          "primary_key_position" : 0,
+          "type" : "INT32"
+        }, {
+          "field" : "pp_code",
+          "id" : "686b23f40f63593100038053_FDM_HPI_cpi_case_pp_code",
+          "label" : "pp_code",
+          "op" : "REMOVE",
+          "operand" : "true",
+          "primary_key_position" : 0,
+          "type" : "STRING(16)"
+        }, {
+          "field" : "last_sub_specialty",
+          "id" : "686b23f40f63593100038053_FDM_HPI_cpi_case_last_sub_specialty",
+          "label" : "last_sub_specialty",
+          "op" : "REMOVE",
+          "operand" : "true",
+          "primary_key_position" : 0,
+          "type" : "STRING(8)"
+        }, {
+          "field" : "destination_code",
+          "id" : "686b23f40f63593100038053_FDM_HPI_cpi_case_destination_code",
+          "label" : "destination_code",
+          "op" : "REMOVE",
+          "operand" : "true",
+          "primary_key_position" : 0,
+          "type" : "STRING(6)"
+        }, {
+          "field" : "discharge_dtm",
+          "id" : "686b23f40f63593100038053_FDM_HPI_cpi_case_discharge_dtm",
+          "label" : "discharge_dtm",
+          "op" : "REMOVE",
+          "operand" : "true",
+          "primary_key_position" : 0,
+          "type" : "DATE_TIME"
+        }, {
+          "field" : "source_indicator",
+          "id" : "686b23f40f63593100038053_FDM_HPI_cpi_case_source_indicator",
+          "label" : "source_indicator",
+          "op" : "REMOVE",
+          "operand" : "true",
+          "primary_key_position" : 0,
+          "type" : "STRING(2)"
+        }, {
+          "field" : "create_dtm",
+          "id" : "686b23f40f63593100038053_FDM_HPI_cpi_case_create_dtm",
+          "label" : "create_dtm",
+          "op" : "REMOVE",
+          "operand" : "true",
+          "primary_key_position" : 0,
+          "type" : "DATE_TIME"
+        }, {
+          "field" : "patient_type",
+          "id" : "686b23f40f63593100038053_FDM_HPI_cpi_case_patient_type",
+          "label" : "patient_type",
+          "op" : "REMOVE",
+          "operand" : "true",
+          "primary_key_position" : 0,
+          "type" : "STRING(6)"
+        } ],
+        "type" : "field_add_del_processor"
+      }, {
+        "alarmRules" : [ {
+          "equalsFlag" : 1,
+          "key" : "PROCESSNODE_AVERAGE_HANDLE_CONSUME",
+          "ms" : 30000,
+          "point" : 60,
+          "times" : 0
+        } ],
+        "alarmSettings" : [ {
+          "interval" : 300,
+          "key" : "PROCESSNODE_AVERAGE_HANDLE_CONSUME",
+          "notify" : [ "SYSTEM", "EMAIL" ],
+          "open" : false,
+          "sort" : 1,
+          "type" : "PROCESSNODE",
+          "unit" : "SECOND"
+        } ],
+        "attrs" : {
+          "capabilities" : [ ],
+          "hasNameEdited" : true,
+          "position" : [ 890, 320 ]
+        },
+        "catalog" : "processor",
+        "concurrentNum" : 2,
+        "disabled" : false,
+        "elementType" : "Node",
+        "fieldsNameTransform" : "",
+        "id" : "d1fe9e96-8154-4c09-83c6-54d56c1fa9a3",
+        "isTransformed" : false,
+        "name" : "cpi_case",
+        "operations" : [ {
+          "field" : "hospital_code",
+          "id" : "686b23f40f63593100038053_FDM_HPI_cpi_case_hospital_code",
+          "op" : "RENAME",
+          "operand" : "hospCode",
+          "primary_key_position" : 1,
+          "type" : "STRING(6)"
+        }, {
+          "field" : "case_no",
+          "id" : "686b23f40f63593100038053_FDM_HPI_cpi_case_case_no",
+          "op" : "RENAME",
+          "operand" : "caseNum",
+          "primary_key_position" : 2,
+          "type" : "STRING(24)"
+        }, {
+          "field" : "patient_key",
+          "id" : "686b23f40f63593100038053_FDM_HPI_cpi_case_patient_key",
+          "op" : "RENAME",
+          "operand" : "patientKey",
+          "primary_key_position" : 0,
+          "type" : "STRING(16)"
+        }, {
+          "field" : "case_type",
+          "id" : "686b23f40f63593100038053_FDM_HPI_cpi_case_case_type",
+          "op" : "RENAME",
+          "operand" : "caseType",
+          "primary_key_position" : 0,
+          "type" : "STRING(2)"
+        }, {
+          "field" : "admission_dtm",
+          "id" : "686b23f40f63593100038053_FDM_HPI_cpi_case_admission_dtm",
+          "op" : "RENAME",
+          "operand" : "admissionDate",
+          "primary_key_position" : 0,
+          "type" : "DATE_TIME"
+        }, {
+          "field" : "source_code",
+          "id" : "686b23f40f63593100038053_FDM_HPI_cpi_case_source_code",
+          "op" : "RENAME",
+          "operand" : "sourceCode",
+          "primary_key_position" : 0,
+          "type" : "STRING(6)"
+        }, {
+          "field" : "discharge_code",
+          "id" : "686b23f40f63593100038053_FDM_HPI_cpi_case_discharge_code",
+          "op" : "RENAME",
+          "operand" : "dischargeCode",
+          "primary_key_position" : 0,
+          "type" : "STRING(2)"
+        }, {
+          "field" : "last_specialty",
+          "id" : "686b23f40f63593100038053_FDM_HPI_cpi_case_last_specialty",
+          "op" : "RENAME",
+          "operand" : "lastSpecCode",
+          "primary_key_position" : 0,
+          "type" : "STRING(8)"
+        }, {
+          "field" : "last_ward_code",
+          "id" : "686b23f40f63593100038053_FDM_HPI_cpi_case_last_ward_code",
+          "op" : "RENAME",
+          "operand" : "lastWardCode",
+          "primary_key_position" : 0,
+          "type" : "STRING(8)"
+        }, {
+          "field" : "last_ward_class",
+          "id" : "686b23f40f63593100038053_FDM_HPI_cpi_case_last_ward_class",
+          "op" : "RENAME",
+          "operand" : "lastWardClass",
+          "primary_key_position" : 0,
+          "type" : "STRING(2)"
+        }, {
+          "field" : "last_bed_no",
+          "id" : "686b23f40f63593100038053_FDM_HPI_cpi_case_last_bed_no",
+          "op" : "RENAME",
+          "operand" : "lastBedNum",
+          "primary_key_position" : 0,
+          "type" : "STRING(10)"
+        }, {
+          "field" : "status_code",
+          "id" : "686b23f40f63593100038053_FDM_HPI_cpi_case_status_code",
+          "op" : "RENAME",
+          "operand" : "statusCode",
+          "primary_key_position" : 0,
+          "type" : "STRING(4)"
+        } ],
+        "type" : "field_rename_processor"
+      }, {
+        "alarmRules" : [ {
+          "equalsFlag" : 1,
+          "key" : "DATANODE_AVERAGE_HANDLE_CONSUME",
+          "ms" : 1000,
+          "point" : 12,
+          "times" : 0
+        } ],
+        "alarmSettings" : [ {
+          "interval" : 300,
+          "key" : "DATANODE_AVERAGE_HANDLE_CONSUME",
+          "notify" : [ "SYSTEM", "EMAIL" ],
+          "open" : true,
+          "sort" : 4,
+          "type" : "DATANODE",
+          "unit" : "SECOND"
+        } ],
+        "applyCompareRule" : false,
+        "attrs" : {
+          "accessNodeProcessId" : "",
+          "accessNodeType" : "AUTOMATIC_PLATFORM_ALLOCATION",
+          "capabilities" : [ {
+            "id" : "source_incremental_update_event_have_before",
+            "type" : 20
+          }, {
+            "id" : "execute_command_function",
+            "type" : 11
+          }, {
+            "id" : "batch_read_function",
+            "type" : 11
+          }, {
+            "id" : "stream_read_function",
+            "type" : 11
+          }, {
+            "id" : "batch_count_function",
+            "type" : 11
+          }, {
+            "id" : "timestamp_to_stream_offset_function",
+            "type" : 11
+          }, {
+            "id" : "write_record_function",
+            "type" : 11
+          }, {
+            "id" : "query_by_advance_filter_function",
+            "type" : 11
+          }, {
+            "id" : "create_table_v2_function",
+            "type" : 11
+          }, {
+            "id" : "drop_table_function",
+            "type" : 11
+          }, {
+            "id" : "create_index_function",
+            "type" : 11
+          }, {
+            "id" : "query_indexes_function",
+            "type" : 11
+          }, {
+            "id" : "count_by_partition_filter_function",
+            "type" : 11
+          }, {
+            "id" : "get_read_partitions_function",
+            "type" : 11
+          }, {
+            "id" : "query_field_min_max_value_function",
+            "type" : 11
+          }, {
+            "id" : "get_table_info_function",
+            "type" : 11
+          }, {
+            "id" : "get_table_names_function",
+            "type" : 11
+          }, {
+            "id" : "error_handle_function",
+            "type" : 11
+          }, {
+            "id" : "master_slave_merge",
+            "type" : 20
+          }, {
+            "id" : "dynamic_schema",
+            "type" : 20
+          }, {
+            "alternatives" : [ "update_on_exists", "ignore_on_exists", "just_insert" ],
+            "id" : "dml_insert_policy",
+            "type" : 20
+          }, {
+            "alternatives" : [ "ignore_on_nonexists", "insert_on_nonexists", "log_on_nonexists" ],
+            "id" : "dml_update_policy",
+            "type" : 20
+          }, {
+            "id" : "api_server_supported",
+            "type" : 20
+          } ],
+          "connectionName" : "FDM",
+          "connectionTags" : [ "schema-free", "Database", "doubleActive" ],
+          "connectionType" : "source_and_target",
+          "db_version" : "7.0.16",
+          "hasCreated" : false,
+          "pdkHash" : "4335aaa005ec1a74a4e2166bded2962e939ad50239f48b023b884f35b54129a5",
+          "pdkType" : "pdk",
+          "position" : [ 50, 230 ]
+        },
+        "catalog" : "data",
+        "cdcMode" : "logCdc",
+        "cdcPollingBatchSize" : 0,
+        "cdcPollingFields" : [ {
+          "defaultValue" : "",
+          "field" : ""
+        } ],
+        "cdcPollingInterval" : 0,
+        "compareIgnoreCase" : false,
+        "connectionId" : "69b7612501246ccf96bf3593",
+        "databaseType" : "MongoDB",
+        "ddlConfiguration" : "FILTER",
+        "disabled" : false,
+        "elementType" : "Node",
+        "enableCustomCommand" : false,
+        "esFragmentNum" : 3,
+        "existDataProcessMode" : "keepData",
+        "id" : "589a0dd8-7868-4929-9081-8c2973adc49e",
+        "ignoreMetrics" : false,
+        "increaseReadSize" : 100,
+        "incrementExactlyOnceEnableTimeWindowDay" : 3,
+        "isFilter" : false,
+        "isTransformed" : false,
+        "maxTransactionDuration" : 12.0,
+        "name" : "FDM_HPI_cpi_patient",
+        "noPkSyncMode" : "ADD_HASH",
+        "nodeConfig" : {
+          "enableFillingModifiedData" : false,
+          "noCursorTimeout" : false,
+          "preImage" : true,
+          "writeConcern" : "w1"
+        },
+        "reFullRun" : false,
+        "readBatchSize" : 500,
+        "readPartitionOptions" : {
+          "enable" : false,
+          "hasKVStorage" : true,
+          "maxRecordInPartition" : 200000,
+          "minMaxSplitPieces" : 100,
+          "partitionBatchCount" : 3000,
+          "partitionThreadCount" : 8,
+          "splitType" : 10
+        },
+        "sourceAndTarget" : false,
+        "syncForeignKeyEnable" : true,
+        "tableName" : "FDM_HPI_cpi_patient",
+        "type" : "table",
+        "writeStrategy" : "updateOrInsert",
+        "xmlIncludeFile" : false
+      }, {
+        "alarmRules" : [ {
+          "equalsFlag" : 1,
+          "key" : "DATANODE_AVERAGE_HANDLE_CONSUME",
+          "ms" : 1000,
+          "point" : 12,
+          "times" : 0
+        } ],
+        "alarmSettings" : [ {
+          "interval" : 300,
+          "key" : "DATANODE_AVERAGE_HANDLE_CONSUME",
+          "notify" : [ "SYSTEM", "EMAIL" ],
+          "open" : true,
+          "sort" : 4,
+          "type" : "DATANODE",
+          "unit" : "SECOND"
+        } ],
+        "applyCompareRule" : false,
+        "attrs" : {
+          "accessNodeProcessId" : "",
+          "accessNodeType" : "AUTOMATIC_PLATFORM_ALLOCATION",
+          "capabilities" : [ {
+            "id" : "source_incremental_update_event_have_before",
+            "type" : 20
+          }, {
+            "id" : "execute_command_function",
+            "type" : 11
+          }, {
+            "id" : "batch_read_function",
+            "type" : 11
+          }, {
+            "id" : "stream_read_function",
+            "type" : 11
+          }, {
+            "id" : "batch_count_function",
+            "type" : 11
+          }, {
+            "id" : "timestamp_to_stream_offset_function",
+            "type" : 11
+          }, {
+            "id" : "write_record_function",
+            "type" : 11
+          }, {
+            "id" : "query_by_advance_filter_function",
+            "type" : 11
+          }, {
+            "id" : "create_table_v2_function",
+            "type" : 11
+          }, {
+            "id" : "drop_table_function",
+            "type" : 11
+          }, {
+            "id" : "create_index_function",
+            "type" : 11
+          }, {
+            "id" : "query_indexes_function",
+            "type" : 11
+          }, {
+            "id" : "count_by_partition_filter_function",
+            "type" : 11
+          }, {
+            "id" : "get_read_partitions_function",
+            "type" : 11
+          }, {
+            "id" : "query_field_min_max_value_function",
+            "type" : 11
+          }, {
+            "id" : "transaction_begin_function",
+            "type" : 11
+          }, {
+            "id" : "transaction_commit_function",
+            "type" : 11
+          }, {
+            "id" : "transaction_rollback_function",
+            "type" : 11
+          }, {
+            "id" : "get_table_info_function",
+            "type" : 11
+          }, {
+            "id" : "get_table_names_function",
+            "type" : 11
+          }, {
+            "id" : "error_handle_function",
+            "type" : 11
+          }, {
+            "id" : "master_slave_merge",
+            "type" : 20
+          }, {
+            "id" : "dynamic_schema",
+            "type" : 20
+          }, {
+            "alternatives" : [ "update_on_exists", "ignore_on_exists", "just_insert" ],
+            "id" : "dml_insert_policy",
+            "type" : 20
+          }, {
+            "alternatives" : [ "ignore_on_nonexists", "insert_on_nonexists", "log_on_nonexists" ],
+            "id" : "dml_update_policy",
+            "type" : 20
+          }, {
+            "id" : "api_server_supported",
+            "type" : 20
+          }, {
+            "id" : "source_support_exactly_once",
+            "type" : 20
+          } ],
+          "connectionName" : "FDM",
+          "connectionTags" : [ "schema-free", "Database", "doubleActive" ],
+          "connectionType" : "source_and_target",
+          "db_version" : "8.0.9",
+          "hasCreated" : false,
+          "pdkHash" : "4335aaa005ec1a74a4e2166bded2962e939ad50239f48b023b884f35b54129a5",
+          "pdkType" : "pdk",
+          "position" : [ 50, 320 ]
+        },
+        "catalog" : "data",
+        "cdcMode" : "logCdc",
+        "cdcPollingBatchSize" : 0,
+        "cdcPollingFields" : [ {
+          "defaultValue" : "",
+          "field" : ""
+        } ],
+        "cdcPollingInterval" : 0,
+        "compareIgnoreCase" : false,
+        "connectionId" : "69b7612501246ccf96bf3593",
+        "databaseType" : "MongoDB",
+        "ddlConfiguration" : "FILTER",
+        "disabled" : false,
+        "elementType" : "Node",
+        "enableCustomCommand" : false,
+        "esFragmentNum" : 3,
+        "existDataProcessMode" : "keepData",
+        "id" : "93aaad68-f365-4427-b4bd-7e7794ca09eb",
+        "ignoreMetrics" : false,
+        "increaseReadSize" : 100,
+        "incrementExactlyOnceEnableTimeWindowDay" : 3,
+        "isFilter" : false,
+        "isTransformed" : false,
+        "maxTransactionDuration" : 12.0,
+        "name" : "FDM_HPI_cpi_case",
+        "nodeConfig" : {
+          "enableFillingModifiedData" : false,
+          "noCursorTimeout" : false,
+          "preImage" : true,
+          "writeConcern" : "w1"
+        },
+        "reFullRun" : false,
+        "readBatchSize" : 500,
+        "readPartitionOptions" : {
+          "enable" : false,
+          "hasKVStorage" : true,
+          "maxRecordInPartition" : 200000,
+          "minMaxSplitPieces" : 100,
+          "partitionBatchCount" : 3000,
+          "partitionThreadCount" : 8,
+          "splitType" : 1
+        },
+        "sourceAndTarget" : false,
+        "syncForeignKeyEnable" : true,
+        "tableName" : "FDM_HPI_cpi_case",
+        "type" : "table",
+        "writeStrategy" : "updateOrInsert",
+        "xmlIncludeFile" : false
+      }, {
+        "alarmRules" : [ {
+          "equalsFlag" : 1,
+          "key" : "PROCESSNODE_AVERAGE_HANDLE_CONSUME",
+          "ms" : 30000,
+          "point" : 60,
+          "times" : 0
+        } ],
+        "alarmSettings" : [ {
+          "interval" : 300,
+          "key" : "PROCESSNODE_AVERAGE_HANDLE_CONSUME",
+          "notify" : [ "SYSTEM", "EMAIL" ],
+          "open" : false,
+          "sort" : 1,
+          "type" : "PROCESSNODE",
+          "unit" : "SECOND"
+        } ],
+        "attrs" : {
+          "capabilities" : [ ],
+          "position" : [ 610, 140 ]
+        },
+        "catalog" : "processor",
+        "concurrentNum" : 2,
+        "deleteAllFields" : false,
+        "disabled" : false,
+        "elementType" : "Node",
+        "id" : "db71037a-21e1-4c19-8d03-72ea64aa5d52",
+        "isTransformed" : false,
+        "name" : "Add and delete fields",
+        "operations" : [ {
+          "field" : "remark",
+          "id" : "686b23f40f63593100038053_FDM_HPI_cpi_patient_hospital_data_remark",
+          "label" : "remark",
+          "op" : "REMOVE",
+          "operand" : "true",
+          "primary_key_position" : 0,
+          "type" : "STRING(510)"
+        }, {
+          "field" : "create_by",
+          "id" : "686b23f40f63593100038053_FDM_HPI_cpi_patient_hospital_data_create_by",
+          "label" : "create_by",
+          "op" : "REMOVE",
+          "operand" : "true",
+          "primary_key_position" : 0,
+          "type" : "STRING(16)"
+        }, {
+          "field" : "create_dtm",
+          "id" : "686b23f40f63593100038053_FDM_HPI_cpi_patient_hospital_data_create_dtm",
+          "label" : "create_dtm",
+          "op" : "REMOVE",
+          "operand" : "true",
+          "primary_key_position" : 0,
+          "type" : "DATE_TIME"
+        }, {
+          "field" : "update_by",
+          "id" : "686b23f40f63593100038053_FDM_HPI_cpi_patient_hospital_data_update_by",
+          "label" : "update_by",
+          "op" : "REMOVE",
+          "operand" : "true",
+          "primary_key_position" : 0,
+          "type" : "STRING(24)"
+        }, {
+          "field" : "update_dtm",
+          "id" : "686b23f40f63593100038053_FDM_HPI_cpi_patient_hospital_data_update_dtm",
+          "label" : "update_dtm",
+          "op" : "REMOVE",
+          "operand" : "true",
+          "primary_key_position" : 0,
+          "type" : "DATE_TIME"
+        }, {
+          "field" : "row_update_datetime",
+          "id" : "686b23f40f63593100038053_FDM_HPI_cpi_patient_hospital_data_row_update_datetime",
+          "label" : "row_update_datetime",
+          "op" : "REMOVE",
+          "operand" : "true",
+          "primary_key_position" : 0,
+          "type" : "DATE_TIME"
+        } ],
+        "type" : "field_add_del_processor"
+      }, {
+        "alarmRules" : [ {
+          "equalsFlag" : 1,
+          "key" : "DATANODE_AVERAGE_HANDLE_CONSUME",
+          "ms" : 1000,
+          "point" : 12,
+          "times" : 0
+        } ],
+        "alarmSettings" : [ {
+          "interval" : 300,
+          "key" : "DATANODE_AVERAGE_HANDLE_CONSUME",
+          "notify" : [ "SYSTEM", "EMAIL" ],
+          "open" : true,
+          "sort" : 4,
+          "type" : "DATANODE",
+          "unit" : "SECOND"
+        } ],
+        "applyCompareRule" : false,
+        "attrs" : {
+          "accessNodeProcessId" : "",
+          "accessNodeType" : "AUTOMATIC_PLATFORM_ALLOCATION",
+          "capabilities" : [ {
+            "id" : "source_incremental_update_event_have_before",
+            "type" : 20
+          }, {
+            "id" : "execute_command_function",
+            "type" : 11
+          }, {
+            "id" : "batch_read_function",
+            "type" : 11
+          }, {
+            "id" : "stream_read_function",
+            "type" : 11
+          }, {
+            "id" : "batch_count_function",
+            "type" : 11
+          }, {
+            "id" : "timestamp_to_stream_offset_function",
+            "type" : 11
+          }, {
+            "id" : "write_record_function",
+            "type" : 11
+          }, {
+            "id" : "query_by_advance_filter_function",
+            "type" : 11
+          }, {
+            "id" : "create_table_v2_function",
+            "type" : 11
+          }, {
+            "id" : "drop_table_function",
+            "type" : 11
+          }, {
+            "id" : "create_index_function",
+            "type" : 11
+          }, {
+            "id" : "query_indexes_function",
+            "type" : 11
+          }, {
+            "id" : "count_by_partition_filter_function",
+            "type" : 11
+          }, {
+            "id" : "get_read_partitions_function",
+            "type" : 11
+          }, {
+            "id" : "query_field_min_max_value_function",
+            "type" : 11
+          }, {
+            "id" : "transaction_begin_function",
+            "type" : 11
+          }, {
+            "id" : "transaction_commit_function",
+            "type" : 11
+          }, {
+            "id" : "transaction_rollback_function",
+            "type" : 11
+          }, {
+            "id" : "get_table_info_function",
+            "type" : 11
+          }, {
+            "id" : "get_table_names_function",
+            "type" : 11
+          }, {
+            "id" : "error_handle_function",
+            "type" : 11
+          }, {
+            "id" : "master_slave_merge",
+            "type" : 20
+          }, {
+            "id" : "dynamic_schema",
+            "type" : 20
+          }, {
+            "alternatives" : [ "update_on_exists", "ignore_on_exists", "just_insert" ],
+            "id" : "dml_insert_policy",
+            "type" : 20
+          }, {
+            "alternatives" : [ "ignore_on_nonexists", "insert_on_nonexists", "log_on_nonexists" ],
+            "id" : "dml_update_policy",
+            "type" : 20
+          }, {
+            "id" : "api_server_supported",
+            "type" : 20
+          }, {
+            "id" : "source_support_exactly_once",
+            "type" : 20
+          } ],
+          "connectionName" : "FDM",
+          "connectionTags" : [ "schema-free", "Database", "doubleActive" ],
+          "connectionType" : "source_and_target",
+          "db_version" : "8.0.9",
+          "hasCreated" : false,
+          "pdkHash" : "4335aaa005ec1a74a4e2166bded2962e939ad50239f48b023b884f35b54129a5",
+          "pdkType" : "pdk",
+          "position" : [ 50, 50 ]
+        },
+        "catalog" : "data",
+        "cdcMode" : "logCdc",
+        "cdcPollingBatchSize" : 0,
+        "cdcPollingFields" : [ {
+          "defaultValue" : "",
+          "field" : ""
+        } ],
+        "cdcPollingInterval" : 0,
+        "compareIgnoreCase" : false,
+        "connectionId" : "69b7612501246ccf96bf3593",
+        "databaseType" : "MongoDB",
+        "ddlConfiguration" : "FILTER",
+        "disabled" : false,
+        "elementType" : "Node",
+        "enableCustomCommand" : false,
+        "esFragmentNum" : 3,
+        "existDataProcessMode" : "keepData",
+        "id" : "662e6d65-e79f-4129-9cab-1d636ebdb414",
+        "ignoreMetrics" : false,
+        "increaseReadSize" : 100,
+        "incrementExactlyOnceEnableTimeWindowDay" : 3,
+        "isFilter" : false,
+        "isTransformed" : false,
+        "maxTransactionDuration" : 12.0,
+        "name" : "FDM_CMSIP_discharge_information",
+        "noPkSyncMode" : "ADD_HASH",
+        "nodeConfig" : {
+          "enableFillingModifiedData" : false,
+          "noCursorTimeout" : false,
+          "preImage" : true,
+          "writeConcern" : "w1"
+        },
+        "reFullRun" : false,
+        "readBatchSize" : 500,
+        "readPartitionOptions" : {
+          "enable" : false,
+          "hasKVStorage" : true,
+          "maxRecordInPartition" : 200000,
+          "minMaxSplitPieces" : 100,
+          "partitionBatchCount" : 3000,
+          "partitionThreadCount" : 8,
+          "splitType" : 1
+        },
+        "sourceAndTarget" : false,
+        "syncForeignKeyEnable" : true,
+        "tableName" : "FDM_CMSIP_discharge_information",
+        "type" : "table",
+        "writeStrategy" : "updateOrInsert",
+        "xmlIncludeFile" : false
+      }, {
+        "alarmRules" : [ {
+          "equalsFlag" : 1,
+          "key" : "PROCESSNODE_AVERAGE_HANDLE_CONSUME",
+          "ms" : 30000,
+          "point" : 60,
+          "times" : 0
+        } ],
+        "alarmSettings" : [ {
+          "interval" : 300,
+          "key" : "PROCESSNODE_AVERAGE_HANDLE_CONSUME",
+          "notify" : [ "SYSTEM" ],
+          "open" : false,
+          "sort" : 1,
+          "type" : "PROCESSNODE",
+          "unit" : "SECOND"
+        } ],
+        "attrs" : {
+          "capabilities" : [ ],
+          "hasNameEdited" : true,
+          "position" : [ 330, 50 ]
+        },
+        "catalog" : "processor",
+        "concurrentNum" : 2,
+        "disabled" : false,
+        "elementType" : "Node",
+        "id" : "10ce11b1-b964-44c5-b3f6-7e96b7756c18",
+        "isTransformed" : false,
+        "name" : "discharge_information",
+        "script" : "function process(record){\n\t// Enter you code at here\n\tif(record.case_no){\n\t  record.case_no=safeTrim(record.case_no)\n\t}\n\tif (record.hospital_code) {\n\t  record.hospital_code=safeTrim(record.hospital_code)\n\t}\n\tif (record.specialty) {\n\t  record.specialty=safeTrim(record.specialty)\n\t}\n\tif (record.discharge_team) {\n\t  record.discharge_team=safeTrim(record.discharge_team)\n\t}\n\tif (record.specialist_ic) {\n\t  record.specialist_ic=safeTrim(record.specialist_ic)\n\t}\n\tif (record.mo_in_charge_id) {\n\t  record.mo_in_charge_id=safeTrim(record.mo_in_charge_id)\n\t}\n\t\n\n\treturn record;\n\n\nfunction safeTrim(val) {\n  if (val == null) {\n    return null;\n  } \n  \n    const trimmed = String(val).trim();\n\n    return trimmed === '' ? null :trimmed; //if after trim is blank, return null\n  \n}\n}",
+        "type" : "standard_js_processor"
+      }, {
+        "alarmRules" : [ {
+          "equalsFlag" : 1,
+          "key" : "PROCESSNODE_AVERAGE_HANDLE_CONSUME",
+          "ms" : 30000,
+          "point" : 60,
+          "times" : 0
+        } ],
+        "alarmSettings" : [ {
+          "interval" : 300,
+          "key" : "PROCESSNODE_AVERAGE_HANDLE_CONSUME",
+          "notify" : [ "SYSTEM", "EMAIL" ],
+          "open" : false,
+          "sort" : 1,
+          "type" : "PROCESSNODE",
+          "unit" : "SECOND"
+        } ],
+        "attrs" : {
+          "capabilities" : [ ],
+          "position" : [ 610, 50 ]
+        },
+        "catalog" : "processor",
+        "concurrentNum" : 2,
+        "deleteAllFields" : false,
+        "disabled" : false,
+        "elementType" : "Node",
+        "id" : "bea58386-d56d-4b12-810a-59badb713fa6",
+        "isTransformed" : false,
+        "name" : "Add and delete fields",
+        "operations" : [ {
+          "field" : "sick_leave_to_dtm",
+          "id" : "686b23f40f63593100038053_FDM_CMSIP_discharge_information_sick_leave_to_dtm",
+          "label" : "sick_leave_to_dtm",
+          "op" : "REMOVE",
+          "operand" : "true",
+          "primary_key_position" : 0,
+          "type" : "DATE_TIME"
+        }, {
+          "field" : "sick_leave_from_dtm",
+          "id" : "686b23f40f63593100038053_FDM_CMSIP_discharge_information_sick_leave_from_dtm",
+          "label" : "sick_leave_from_dtm",
+          "op" : "REMOVE",
+          "operand" : "true",
+          "primary_key_position" : 0,
+          "type" : "DATE_TIME"
+        }, {
+          "field" : "timestamp",
+          "id" : "686b23f40f63593100038053_FDM_CMSIP_discharge_information_timestamp",
+          "label" : "timestamp",
+          "op" : "REMOVE",
+          "operand" : "true",
+          "primary_key_position" : 0,
+          "type" : "BINARY"
+        }, {
+          "field" : "discharge_physician",
+          "id" : "686b23f40f63593100038053_FDM_CMSIP_discharge_information_discharge_physician",
+          "label" : "discharge_physician",
+          "op" : "REMOVE",
+          "operand" : "true",
+          "primary_key_position" : 0,
+          "type" : "STRING(12)"
+        }, {
+          "field" : "discharge_destination",
+          "id" : "686b23f40f63593100038053_FDM_CMSIP_discharge_information_discharge_destination",
+          "label" : "discharge_destination",
+          "op" : "REMOVE",
+          "operand" : "true",
+          "primary_key_position" : 0,
+          "type" : "STRING(5)"
+        }, {
+          "field" : "discharge_mode",
+          "id" : "686b23f40f63593100038053_FDM_CMSIP_discharge_information_discharge_mode",
+          "label" : "discharge_mode",
+          "op" : "REMOVE",
+          "operand" : "true",
+          "primary_key_position" : 0,
+          "type" : "STRING(1)"
+        }, {
+          "field" : "expected_discharge_date",
+          "id" : "686b23f40f63593100038053_FDM_CMSIP_discharge_information_expected_discharge_date",
+          "label" : "expected_discharge_date",
+          "op" : "REMOVE",
+          "operand" : "true",
+          "primary_key_position" : 0,
+          "type" : "DATE_TIME"
+        }, {
+          "field" : "admit_doctor",
+          "id" : "686b23f40f63593100038053_FDM_CMSIP_discharge_information_admit_doctor",
+          "label" : "admit_doctor",
+          "op" : "REMOVE",
+          "operand" : "true",
+          "primary_key_position" : 0,
+          "type" : "STRING(12)"
+        }, {
+          "field" : "admit_physician",
+          "id" : "686b23f40f63593100038053_FDM_CMSIP_discharge_information_admit_physician",
+          "label" : "admit_physician",
+          "op" : "REMOVE",
+          "operand" : "true",
+          "primary_key_position" : 0,
+          "type" : "STRING(12)"
+        }, {
+          "field" : "admit_team",
+          "id" : "686b23f40f63593100038053_FDM_CMSIP_discharge_information_admit_team",
+          "label" : "admit_team",
+          "op" : "REMOVE",
+          "operand" : "true",
+          "primary_key_position" : 0,
+          "type" : "STRING(5)"
+        }, {
+          "field" : "admit_mode",
+          "id" : "686b23f40f63593100038053_FDM_CMSIP_discharge_information_admit_mode",
+          "label" : "admit_mode",
+          "op" : "REMOVE",
+          "operand" : "true",
+          "primary_key_position" : 0,
+          "type" : "INT32"
+        }, {
+          "field" : "update_dtm",
+          "id" : "686b23f40f63593100038053_FDM_CMSIP_discharge_information_update_dtm",
+          "label" : "update_dtm",
+          "op" : "REMOVE",
+          "operand" : "true",
+          "primary_key_position" : 0,
+          "type" : "DATE_TIME"
+        }, {
+          "field" : "update_by",
+          "id" : "686b23f40f63593100038053_FDM_CMSIP_discharge_information_update_by",
+          "label" : "update_by",
+          "op" : "REMOVE",
+          "operand" : "true",
+          "primary_key_position" : 0,
+          "type" : "STRING(12)"
+        }, {
+          "field" : "create_by",
+          "id" : "686b23f40f63593100038053_FDM_CMSIP_discharge_information_create_by",
+          "label" : "create_by",
+          "op" : "REMOVE",
+          "operand" : "true",
+          "primary_key_position" : 0,
+          "type" : "STRING(12)"
+        }, {
+          "field" : "ho_id",
+          "id" : "686b23f40f63593100038053_FDM_CMSIP_discharge_information_ho_id",
+          "label" : "ho_id",
+          "op" : "REMOVE",
+          "operand" : "true",
+          "primary_key_position" : 0,
+          "type" : "STRING(12)"
+        } ],
+        "type" : "field_add_del_processor"
+      } ]
+    },
+    "dataSaving" : true,
+    "deduceSchemaTask" : false,
+    "deduplicWriteMode" : "intelligent",
+    "deleteName" : "MDM_CPI_CASE_MODEL",
+    "desc" : "",
+    "doubleActive" : false,
+    "dynamicAdjustMemoryUsage" : false,
+    "editVersion" : "1773390775064",
+    "emailReceivers" : [ ],
+    "enforceShareCdc" : true,
+    "fileLog" : false,
+    "finishTime" : 1755244519713,
+    "id" : "688980fc143e5b4bfd479caa",
+    "increHysteresis" : false,
+    "increOperationMode" : false,
+    "increSyncConcurrency" : false,
+    "increaseReadSize" : 1,
+    "initialSyncTask" : true,
+    "isAutoCreateIndex" : true,
+    "isAutoInspect" : false,
+    "isEdit" : false,
+    "isFilter" : false,
+    "isOpenAutoDDL" : false,
+    "isSchedule" : false,
+    "isStopOnError" : true,
+    "ldpType" : "mdm",
+    "name" : "MDM_CPI_CASE_MODEL_nF24ZE",
+    "normalTask" : true,
+    "oldVersionTimezone" : false,
+    "pageVersion" : "1773390773340",
+    "planStartDateFlag" : false,
+    "preview" : false,
+    "previewTask" : false,
+    "processorThreadNum" : 1,
+    "reFullRun" : false,
+    "readBatchSize" : 500,
+    "restartFlag" : false,
+    "shareCache" : false,
+    "shareCdcEnable" : false,
+    "shareCdcTaskId" : {
+      "686b23f40f63593100038053" : "69410ff85d91e24ed77d14b9"
+    },
+    "showInspectTips" : false,
+    "skipErrorEvent" : {
+      "errorMode" : "Disable",
+      "errorModeEnum" : "Disable",
+      "limitMode" : "SkipByLimit",
+      "limitModeEnum" : "SkipByLimit"
+    },
+    "snapShotInterrupt" : false,
+    "status" : "edit",
+    "statuses" : [ ],
+    "stopRetryTimes" : 0,
+    "syncPoints" : [ {
+      "connectionId" : "695497a235a6fa1717313957",
+      "connectionName" : "FDM",
+      "dateTime" : 1765874403000,
+      "isStreamOffset" : false,
+      "nodeId" : "e8c1095a-1da7-423e-9aec-424113a7ecea",
+      "nodeName" : "FDM_HPI_cpi_patient_hospital_data",
+      "pointType" : "localTZ",
+      "timeZone" : "+8"
+    }, {
+      "connectionId" : "695497a235a6fa1717313957",
+      "connectionName" : "FDM",
+      "dateTime" : 1765874403000,
+      "isStreamOffset" : false,
+      "nodeId" : "589a0dd8-7868-4929-9081-8c2973adc49e",
+      "nodeName" : "FDM_HPI_cpi_patient",
+      "pointType" : "localTZ",
+      "timeZone" : "+8"
+    }, {
+      "connectionId" : "695497a235a6fa1717313957",
+      "connectionName" : "FDM",
+      "dateTime" : 1765874403000,
+      "isStreamOffset" : false,
+      "nodeId" : "93aaad68-f365-4427-b4bd-7e7794ca09eb",
+      "nodeName" : "FDM_HPI_cpi_case",
+      "pointType" : "localTZ",
+      "timeZone" : "+8"
+    }, {
+      "connectionId" : "695497a235a6fa1717313957",
+      "connectionName" : "FDM",
+      "dateTime" : 1765874403000,
+      "isStreamOffset" : false,
+      "nodeId" : "662e6d65-e79f-4129-9cab-1d636ebdb414",
+      "nodeName" : "FDM_CMSIP_discharge_information",
+      "pointType" : "localTZ",
+      "timeZone" : "+8"
+    } ],
+    "syncStatus" : "",
+    "syncType" : "sync",
+    "taskRetryStartTime" : 1768473121755,
+    "testTask" : false,
+    "testTaskId" : "688980fc143e5b4bfd479ca8",
+    "testUsingPreview" : false,
+    "transformDagHash" : 0,
+    "transformProcess" : 0.0,
+    "transformTaskId" : "688980fc143e5b4bfd479ca9",
+    "transformUuid" : "1773627180503",
+    "transformed" : true,
+    "type" : "initial_sync+cdc",
+    "writeBatchSize" : 0,
+    "writeBatchWaitMs" : 0,
+    "writeThreadSize" : 8
+  }
+} ]
