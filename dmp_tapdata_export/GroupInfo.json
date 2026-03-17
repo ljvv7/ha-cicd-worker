@@ -18,19 +18,19 @@
       "type" : "MODULE"
     }, {
       "id" : "688867744819e6751295d10b",
-      "name" : "CMS (cms_h1a_pgs1) _TO_FDM_wfuk9N",
+      "name" : "CMS (cms_h1a_pgs1) _TO_FDM",
       "type" : "MIGRATE_TASK"
     }, {
       "id" : "6886f4664819e67512956d92",
-      "name" : "HPI (pas_vh_pgs1) _TO_FDM_pWLzMc",
+      "name" : "HPI (pas_vh_pgs1) _TO_FDM",
       "type" : "MIGRATE_TASK"
     }, {
       "id" : "686f3f930f63593100039250",
-      "name" : "HKPMI (pas_hkpmi_pgs1) _TO_FDM_oRXylW",
+      "name" : "HKPMI (pas_hkpmi_pgs1) _TO_FDM",
       "type" : "MIGRATE_TASK"
     }, {
       "id" : "688980fc143e5b4bfd479caa",
-      "name" : "MDM_CPI_CASE_MODEL_nF24ZE",
+      "name" : "MDM_CPI_CASE_MODEL",
       "type" : "SYNC_TASK"
     } ]
   }
