@@ -1,0 +1,157 @@
+[ {
+  "collectionName" : "Connections",
+  "json" : {
+    "accessNodeProcessId" : "",
+    "accessNodeProcessIdList" : [ ],
+    "accessNodeType" : "AUTOMATIC_PLATFORM_ALLOCATION",
+    "accessNodeTypeEmpty" : false,
+    "agentTags" : [ ],
+    "alarmInfo" : "DataSourceConnectionDto{name='MDM', connection_type='source_and_target', retry=0, status='invalid', tableCount=0, loadAllTables=true, loadFieldsStatus=error, loadFieldErrMsg=java.lang.RuntimeException: Load schema fields error, connection name: MDM, message: Unknown PDK exception occur, com.mongodb.MongoTimeoutException: Timed out after 30000 ms while waiting to connect. Client view of cluster state is {type=UNKNOWN, servers=[{address=172.26.44.146:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketReadException: Exception receiving message}, caused by {java.net.SocketException: Connection reset}}]\n  java.lang.RuntimeException: Load schema fields error, connection name: MDM, message: Unknown PDK exception occur, com.mongodb.MongoTimeoutException: Timed out after 30000 ms while waiting to connect. Client view of cluster state is {type=UNKNOWN, servers=[{address=172.26.44.146:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketReadException: Exception receiving message}, caused by {java.net.SocketException: Connection reset}}]\n\tat io.tapdata.Runnable.LoadSchemaRunner.run(LoadSchemaRunner.java:191)\n\tat io.tapdata.websocket.handler.TestConnectionHandler.testPdkConnection(TestConnectionHandler.java:264)\n\tat io.tapdata.websocket.handler.TestConnectionHandler.handleSync(TestConnectionHandler.java:156)\n\tat io.tapdata.websocket.handler.TestConnectionHandler.lambda$handle$2(TestConnectionHandler.java:127)\n\tat io.tapdata.aspect.supervisor.AspectRunnableUtil.lambda$aspectRunnable$1(AspectRunnableUtil.java:11)\n\tat java.base/java.lang.Thread.run(Thread.java:840)\nCaused by: com.mongodb.MongoTimeoutException: Timed out after 30000 ms while waiting to connect. Client view of cluster state is {type=UNKNOWN, servers=[{address=172.26.44.146:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketReadException: Exception receiving message}, caused by {java.net.SocketException: Connection reset}}]\n\tat io.tapdata.pdk.core.monitor.PDKInvocationMonitor.invokePDKMethodPrivate(PDKInvocationMonitor.java:188)\n\tat io.tapdata.pdk.core.monitor.PDKInvocationMonitor.lambda$invokePDKMethod$5(PDKInvocationMonitor.java:125)\n\tat io.tapdata.pdk.core.api.Node.applyClassLoaderContext(Node.java:27)\n\tat io.tapdata.pdk.core.monitor.PDKInvocationMonitor.invokePDKMethod(PDKInvocationMonitor.java:125)\n\tat io.tapdata.pdk.core.monitor.PDKInvocationMonitor.invokePDKMethod(PDKInvocationMonitor.java:109)\n\tat io.tapdata.pdk.core.monitor.PDKInvocationMonitor.invoke(PDKInvocationMonitor.java:83)\n\tat io.tapdata.Runnable.LoadSchemaRunner.run(LoadSchemaRunner.java:160)\n\t... 5 more\nCaused by: com.mongodb.MongoTimeoutException: Timed out after 30000 ms while waiting to connect. Client view of cluster state is {type=UNKNOWN, servers=[{address=172.26.44.146:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketReadException: Exception receiving message}, caused by {java.net.SocketException: Connection reset}}]\n\tat com.mongodb.internal.connection.BaseCluster.getDescription(BaseCluster.java:184)\n\tat com.mongodb.internal.connection.SingleServerCluster.getDescription(SingleServerCluster.java:46)\n\tat com.mongodb.client.internal.MongoClientDelegate.getConnectedClusterDescription(MongoClientDelegate.java:143)\n\tat com.mongodb.client.internal.MongoClientDelegate.createClientSession(MongoClientDelegate.java:100)\n\tat com.mongodb.client.internal.MongoClientDelegate$DelegateOperationExecutor.getClientSession(MongoClientDelegate.java:285)\n\tat com.mongodb.client.internal.MongoClientDelegate$DelegateOperationExecutor.execute(MongoClientDelegate.java:177)\n\tat com.mongodb.client.internal.MongoDatabaseImpl.executeCommand(MongoDatabaseImpl.java:196)\n\tat com.mongodb.client.internal.MongoDatabaseImpl.runCommand(MongoDatabaseImpl.java:165)\n\tat com.mongodb.client.internal.MongoDatabaseImpl.runCommand(MongoDatabaseImpl.java:160)\n\tat com.mongodb.client.internal.MongoDatabaseImpl.runCommand(MongoDatabaseImpl.java:150)\n\tat io.tapdata.mongodb.MongodbUtil.getVersion(MongodbUtil.java:61)\n\tat io.tapdata.mongodb.MongodbConnector.onStart(MongodbConnector.java:1312)\n\tat io.tapdata.base.ConnectorBase.init(ConnectorBase.java:285)\n\tat io.tapdata.pdk.core.api.ConnectionNode.connectorInit(ConnectionNode.java:53)\n\tat io.tapdata.pdk.core.monitor.PDKInvocationMonitor.invokePDKMethodPrivate(PDKInvocationMonitor.java:165)\n\t... 11 more\n}",
+    "capabilities" : [ {
+      "id" : "execute_command_function",
+      "type" : 11
+    }, {
+      "id" : "batch_read_function",
+      "type" : 11
+    }, {
+      "id" : "stream_read_function",
+      "type" : 11
+    }, {
+      "id" : "batch_count_function",
+      "type" : 11
+    }, {
+      "id" : "timestamp_to_stream_offset_function",
+      "type" : 11
+    }, {
+      "id" : "write_record_function",
+      "type" : 11
+    }, {
+      "id" : "query_by_advance_filter_function",
+      "type" : 11
+    }, {
+      "id" : "create_table_v2_function",
+      "type" : 11
+    }, {
+      "id" : "drop_table_function",
+      "type" : 11
+    }, {
+      "id" : "create_index_function",
+      "type" : 11
+    }, {
+      "id" : "query_indexes_function",
+      "type" : 11
+    }, {
+      "id" : "count_by_partition_filter_function",
+      "type" : 11
+    }, {
+      "id" : "get_read_partitions_function",
+      "type" : 11
+    }, {
+      "id" : "query_field_min_max_value_function",
+      "type" : 11
+    }, {
+      "id" : "transaction_begin_function",
+      "type" : 11
+    }, {
+      "id" : "transaction_commit_function",
+      "type" : 11
+    }, {
+      "id" : "transaction_rollback_function",
+      "type" : 11
+    }, {
+      "id" : "get_table_info_function",
+      "type" : 11
+    }, {
+      "id" : "get_table_names_function",
+      "type" : 11
+    }, {
+      "id" : "error_handle_function",
+      "type" : 11
+    }, {
+      "id" : "master_slave_merge",
+      "type" : 20
+    }, {
+      "id" : "dynamic_schema",
+      "type" : 20
+    }, {
+      "alternatives" : [ "update_on_exists", "ignore_on_exists", "just_insert" ],
+      "id" : "dml_insert_policy",
+      "type" : 20
+    }, {
+      "alternatives" : [ "ignore_on_nonexists", "insert_on_nonexists", "log_on_nonexists" ],
+      "id" : "dml_update_policy",
+      "type" : 20
+    }, {
+      "id" : "api_server_supported",
+      "type" : 20
+    }, {
+      "id" : "source_support_exactly_once",
+      "type" : 20
+    } ],
+    "config" : {
+      "__connectionType" : "source_and_target",
+      "id" : "695497a235a6fa171731395e",
+      "isUri" : true,
+      "mongodbLoadSchemaSampleSize" : 1000,
+      "schemaLimit" : 1024,
+      "ssl" : false
+    },
+    "connection_type" : "source_and_target",
+    "createTime" : 1773625637455,
+    "database_type" : "MongoDB",
+    "database_uri" : "mongodb://null/null",
+    "db_version" : "8.0.9",
+    "definitionBuildNumber" : "null",
+    "definitionGroup" : "io.tapdata",
+    "definitionPdkAPIVersion" : "2.0.6-SNAPSHOT",
+    "definitionPdkId" : "mongodb",
+    "definitionScope" : "public",
+    "definitionTags" : [ "schema-free", "Database", "doubleActive" ],
+    "definitionVersion" : "1.0-SNAPSHOT",
+    "everLoadSchema" : true,
+    "heartbeatEnable" : false,
+    "id" : "69b7612501246ccf96bf359a",
+    "isInit" : false,
+    "kafkaAcks" : "-1",
+    "kafkaBatchSize" : 0,
+    "kafkaBufferMemory" : 0,
+    "kafkaCompressionType" : "",
+    "kafkaConsumerRequestTimeout" : 0,
+    "kafkaConsumerUseTransactional" : false,
+    "kafkaDeliveryTimeoutMS" : 0,
+    "kafkaIgnoreInvalidRecord" : false,
+    "kafkaIgnorePushError" : false,
+    "kafkaLingerMS" : 0,
+    "kafkaMaxBlockMS" : 0,
+    "kafkaMaxFetchBytes" : 0,
+    "kafkaMaxFetchWaitMS" : 0,
+    "kafkaMaxPollRecords" : 0,
+    "kafkaMaxRequestSize" : 0,
+    "kafkaPartitionKey" : "",
+    "kafkaPollTimeoutMS" : 0,
+    "kafkaProducerRequestTimeout" : 0,
+    "kafkaProducerUseTransactional" : false,
+    "kafkaRetries" : 0,
+    "lastStatus" : "ready",
+    "lastUpdate" : 1773684091598,
+    "last_updated" : 1773627145263,
+    "loadAllTables" : true,
+    "loadCount" : 0,
+    "loadFieldErrMsg" : "java.lang.RuntimeException: Load schema fields error, connection name: MDM, message: Unknown PDK exception occur, com.mongodb.MongoTimeoutException: Timed out after 30000 ms while waiting to connect. Client view of cluster state is {type=UNKNOWN, servers=[{address=172.26.44.146:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketReadException: Exception receiving message}, caused by {java.net.SocketException: Connection reset}}]\n  java.lang.RuntimeException: Load schema fields error, connection name: MDM, message: Unknown PDK exception occur, com.mongodb.MongoTimeoutException: Timed out after 30000 ms while waiting to connect. Client view of cluster state is {type=UNKNOWN, servers=[{address=172.26.44.146:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketReadException: Exception receiving message}, caused by {java.net.SocketException: Connection reset}}]\n\tat io.tapdata.Runnable.LoadSchemaRunner.run(LoadSchemaRunner.java:191)\n\tat io.tapdata.websocket.handler.TestConnectionHandler.testPdkConnection(TestConnectionHandler.java:264)\n\tat io.tapdata.websocket.handler.TestConnectionHandler.handleSync(TestConnectionHandler.java:156)\n\tat io.tapdata.websocket.handler.TestConnectionHandler.lambda$handle$2(TestConnectionHandler.java:127)\n\tat io.tapdata.aspect.supervisor.AspectRunnableUtil.lambda$aspectRunnable$1(AspectRunnableUtil.java:11)\n\tat java.base/java.lang.Thread.run(Thread.java:840)\nCaused by: com.mongodb.MongoTimeoutException: Timed out after 30000 ms while waiting to connect. Client view of cluster state is {type=UNKNOWN, servers=[{address=172.26.44.146:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketReadException: Exception receiving message}, caused by {java.net.SocketException: Connection reset}}]\n\tat io.tapdata.pdk.core.monitor.PDKInvocationMonitor.invokePDKMethodPrivate(PDKInvocationMonitor.java:188)\n\tat io.tapdata.pdk.core.monitor.PDKInvocationMonitor.lambda$invokePDKMethod$5(PDKInvocationMonitor.java:125)\n\tat io.tapdata.pdk.core.api.Node.applyClassLoaderContext(Node.java:27)\n\tat io.tapdata.pdk.core.monitor.PDKInvocationMonitor.invokePDKMethod(PDKInvocationMonitor.java:125)\n\tat io.tapdata.pdk.core.monitor.PDKInvocationMonitor.invokePDKMethod(PDKInvocationMonitor.java:109)\n\tat io.tapdata.pdk.core.monitor.PDKInvocationMonitor.invoke(PDKInvocationMonitor.java:83)\n\tat io.tapdata.Runnable.LoadSchemaRunner.run(LoadSchemaRunner.java:160)\n\t... 5 more\nCaused by: com.mongodb.MongoTimeoutException: Timed out after 30000 ms while waiting to connect. Client view of cluster state is {type=UNKNOWN, servers=[{address=172.26.44.146:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketReadException: Exception receiving message}, caused by {java.net.SocketException: Connection reset}}]\n\tat com.mongodb.internal.connection.BaseCluster.getDescription(BaseCluster.java:184)\n\tat com.mongodb.internal.connection.SingleServerCluster.getDescription(SingleServerCluster.java:46)\n\tat com.mongodb.client.internal.MongoClientDelegate.getConnectedClusterDescription(MongoClientDelegate.java:143)\n\tat com.mongodb.client.internal.MongoClientDelegate.createClientSession(MongoClientDelegate.java:100)\n\tat com.mongodb.client.internal.MongoClientDelegate$DelegateOperationExecutor.getClientSession(MongoClientDelegate.java:285)\n\tat com.mongodb.client.internal.MongoClientDelegate$DelegateOperationExecutor.execute(MongoClientDelegate.java:177)\n\tat com.mongodb.client.internal.MongoDatabaseImpl.executeCommand(MongoDatabaseImpl.java:196)\n\tat com.mongodb.client.internal.MongoDatabaseImpl.runCommand(MongoDatabaseImpl.java:165)\n\tat com.mongodb.client.internal.MongoDatabaseImpl.runCommand(MongoDatabaseImpl.java:160)\n\tat com.mongodb.client.internal.MongoDatabaseImpl.runCommand(MongoDatabaseImpl.java:150)\n\tat io.tapdata.mongodb.MongodbUtil.getVersion(MongodbUtil.java:61)\n\tat io.tapdata.mongodb.MongodbConnector.onStart(MongodbConnector.java:1312)\n\tat io.tapdata.base.ConnectorBase.init(ConnectorBase.java:285)\n\tat io.tapdata.pdk.core.api.ConnectionNode.connectorInit(ConnectionNode.java:53)\n\tat io.tapdata.pdk.core.monitor.PDKInvocationMonitor.invokePDKMethodPrivate(PDKInvocationMonitor.java:165)\n\t... 11 more\n",
+    "loadFieldsStatus" : "error",
+    "name" : "MDM",
+    "openTableExcludeFilter" : false,
+    "pdkHash" : "4335aaa005ec1a74a4e2166bded2962e939ad50239f48b023b884f35b54129a5",
+    "pdkType" : "pdk",
+    "plain_password" : "",
+    "project" : "",
+    "retry" : 0,
+    "schemaUpdateHour" : "default",
+    "schemaVersion" : "8eef8029-1924-40ff-a6d9-e2d0db7d97d9",
+    "shareCDCExternalStorageId" : "",
+    "shareCdcEnable" : false,
+    "status" : "invalid",
+    "submit" : true,
+    "tableCount" : 0
+  }
+} ]
